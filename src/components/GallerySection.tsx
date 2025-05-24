@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import { Camera, Play, ExternalLink } from 'lucide-react';
 
 const GallerySection = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  // Real gallery items using the uploaded photos
+  // Extended gallery items with new uploaded photos
   const galleryItems = [
     {
       type: 'image',
@@ -118,10 +117,151 @@ const GallerySection = () => {
       title: 'Audience Connection',
       category: 'Music Events',
       description: 'Creating memorable moments with live audiences'
+    },
+    // New uploaded images
+    {
+      type: 'image',
+      src: '/lovable-uploads/12073c52-4546-4c94-9394-ac10a59f821e.png',
+      title: 'Foundation Day Celebration',
+      category: 'Corporate',
+      description: 'Rainbow Children\'s Hospital 24th Foundation Day hosting'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/e31efbdd-a998-4adb-81d3-c09fd26ad38f.png',
+      title: 'Red Sequin Performance',
+      category: 'Music Events',
+      description: 'Dazzling stage presence in glamorous red outfit'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/f06ed2b8-2122-4a79-be80-f3b04a248290.png',
+      title: 'Stage Command',
+      category: 'Music Events',
+      description: 'Professional hosting with confident stage presence'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/d29c7198-489a-4718-bba0-3f9b7a5b3c92.png',
+      title: 'Concert Hosting',
+      category: 'Music Events',
+      description: 'Energetic performance hosting large audiences'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/169e7a53-57b9-489a-87fa-3f482756688a.png',
+      title: 'Duo Performance',
+      category: 'Music Events',
+      description: 'Collaborative hosting with fellow entertainers'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/79d15f45-90f0-45f0-8761-4add99db3e33.png',
+      title: 'Peter England Event',
+      category: 'Corporate',
+      description: 'Brand event hosting for Peter England'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/22b41b9f-f526-4a1d-9949-ac42b978eb7d.png',
+      title: 'TV Show Recording',
+      category: 'Media',
+      description: 'Professional TV hosting and content creation'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/151020b0-8688-4873-81dc-551869bc529d.png',
+      title: 'Television Hosting',
+      category: 'Media',
+      description: 'Kannada television show presentation'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/45f3f9e7-aa41-4812-af83-657484e20c48.png',
+      title: 'Louis Philippe Event',
+      category: 'Corporate',
+      description: 'Premium brand event hosting at Louis Philippe'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/af84c35d-f1bc-4bbf-b12c-d4bdbce39b77.png',
+      title: 'Product Launch',
+      category: 'Corporate',
+      description: 'Professional product launch event hosting'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/9d210d8a-2f0d-4ee9-b22b-29dd11656cdc.png',
+      title: 'TV Production',
+      category: 'Media',
+      description: 'Behind-the-scenes TV show production work'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/340d8579-9fd9-47c8-958f-5fb699496d96.png',
+      title: 'Brand Collaboration',
+      category: 'Corporate',
+      description: 'Sri Krishna Ghee brand partnership event'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/24a4c336-7047-47f7-9404-c67ac848214a.png',
+      title: 'Kannada TV Show',
+      category: 'Media',
+      description: 'Regional television content presentation'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/fd6c20c3-76ab-4503-97a6-08b1e5975994.png',
+      title: 'Halloween Event',
+      category: 'Ceremonies',
+      description: 'Spooky season themed event hosting'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/6d1402bc-8510-4558-9831-842bf6eb6461.png',
+      title: 'Vijay Prakash Concert',
+      category: 'Featured',
+      description: 'Prestigious collaboration with music legend Vijay Prakash'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/6c53386f-8317-4daf-a78c-13174c138ef5.png',
+      title: 'TV Studio Hosting',
+      category: 'Media',
+      description: 'Professional studio environment presentation'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/bb9bfaf0-a968-4864-9697-527996ed6218.png',
+      title: 'Celebrity Interaction',
+      category: 'Featured',
+      description: 'Engaging with celebrities and VIP guests'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/1b5dfdf4-8c49-4389-ad41-853772fd8585.png',
+      title: 'Awards Night',
+      category: 'Ceremonies',
+      description: 'VK & Bangalore Mirror Food & Night Life Awards 2024'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/830b04da-1fff-47d7-a58f-83855fc41001.png',
+      title: 'Duo Hosting',
+      category: 'Featured',
+      description: 'Professional collaboration with co-hosts'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/2b0e5440-5e09-4720-93bd-4fa5d63ba5f4.png',
+      title: 'Award Presentation',
+      category: 'Ceremonies',
+      description: 'Elegant award ceremony hosting duties'
     }
   ];
 
-  const categories = ['All', 'Music Events', 'Corporate', 'Ceremonies', 'Featured'];
+  const categories = ['All', 'Music Events', 'Corporate', 'Ceremonies', 'Featured', 'Media'];
 
   const filteredItems = activeFilter === 'All' 
     ? galleryItems 
