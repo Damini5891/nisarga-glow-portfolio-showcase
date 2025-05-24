@@ -4,7 +4,7 @@ import { Camera, Play, ExternalLink } from 'lucide-react';
 const GallerySection = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  // Extended gallery items with new uploaded photos
+  // Extended gallery items with all new uploaded photos
   const galleryItems = [
     {
       type: 'image',
@@ -258,6 +258,69 @@ const GallerySection = () => {
       title: 'Award Presentation',
       category: 'Ceremonies',
       description: 'Elegant award ceremony hosting duties'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/8ed7d40c-7310-4155-8f33-4feca1405e45.png',
+      title: 'Red Lehenga Garden Event',
+      category: 'Ceremonies',
+      description: 'Beautiful outdoor ceremony hosting in elegant red attire'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/ad0e8442-6354-4420-8ba0-3f2cb1421c08.png',
+      title: 'Microphone Garden Performance',
+      category: 'Ceremonies',
+      description: 'Dynamic outdoor event presentation with floral backdrop'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/dc234c01-e467-4f3d-918c-c0a5508e024b.png',
+      title: 'Sequined Gown Evening',
+      category: 'Music Events',
+      description: 'Glamorous evening event hosting in stunning sequined attire'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/c732f967-9a4e-423b-88f1-a6dee9688f69.png',
+      title: 'Black Sequin Wedding',
+      category: 'Ceremonies',
+      description: 'Elegant wedding ceremony hosting in sophisticated black gown'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/9eadd9c3-d83e-49bd-bcec-e36940f49b61.png',
+      title: 'Interactive Wedding Host',
+      category: 'Ceremonies',
+      description: 'Engaging wedding guests with dynamic presentation style'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/0bd20654-1d92-452a-92b8-e7a6326818dd.png',
+      title: 'Wedding Reception Host',
+      category: 'Ceremonies',
+      description: 'Professional wedding reception hosting with elegant backdrop'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/ed9732ed-1653-43c4-9b80-46bf07e36f8f.png',
+      title: 'Garden Wedding Celebration',
+      category: 'Ceremonies',
+      description: 'Beautiful outdoor wedding hosting in vibrant red lehenga'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/b8748bf3-bc3e-48e2-82f0-307e98399296.png',
+      title: 'Floral Mandap Ceremony',
+      category: 'Ceremonies',
+      description: 'Traditional ceremony hosting with stunning floral arrangements'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/c61ce40e-6335-4c82-8dc4-78331bd6e662.png',
+      title: 'Professional Wedding Host',
+      category: 'Ceremonies',
+      description: 'Expert wedding ceremony management and guest interaction'
     }
   ];
 
@@ -271,25 +334,25 @@ const GallerySection = () => {
     <section id="gallery" className="py-20 bg-gradient-to-b from-black to-royal-violet-dark relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 transform-gpu hover:scale-105 transition-transform duration-300">
             Event <span className="gradient-text">Gallery</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Capturing moments from 500+ successful events and 30,000+ entertained audiences
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-coral-pink to-champagne-gold mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-coral-pink to-champagne-gold mx-auto mt-6 animate-shimmer"></div>
         </div>
 
-        {/* Filter Buttons */}
+        {/* Enhanced Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`px-6 py-2 rounded-full border transition-all duration-300 ${
+              className={`px-6 py-3 rounded-full border transition-all duration-500 transform-gpu hover:scale-105 ${
                 activeFilter === filter
-                  ? 'bg-coral-pink text-white border-coral-pink'
-                  : 'border-coral-pink text-coral-pink hover:bg-coral-pink hover:text-white'
+                  ? 'bg-gradient-to-r from-coral-pink to-champagne-gold text-white border-transparent shadow-2xl'
+                  : 'border-coral-pink text-coral-pink hover:bg-coral-pink hover:text-white glassmorphism'
               }`}
             >
               {filter}
@@ -297,37 +360,37 @@ const GallerySection = () => {
           ))}
         </div>
 
-        {/* Gallery Grid */}
+        {/* Enhanced Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredItems.map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 aspect-square cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 aspect-square cursor-pointer transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl"
             >
               {/* Image or Video Placeholder */}
               {item.type === 'image' && item.src ? (
                 <img
                   src={item.src}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-coral-pink/20 to-royal-violet/20 flex items-center justify-center">
                   {item.type === 'video' ? (
-                    <Play className="text-white" size={48} />
+                    <Play className="text-white drop-shadow-lg" size={48} />
                   ) : (
-                    <Camera className="text-white" size={48} />
+                    <Camera className="text-white drop-shadow-lg" size={48} />
                   )}
                 </div>
               )}
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <div className="text-champagne-gold text-sm font-medium mb-1">
+              {/* Enhanced Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <div className="text-champagne-gold text-sm font-medium mb-1 animate-shimmer">
                     {item.category}
                   </div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-white font-semibold mb-2 transform-gpu group-hover:scale-105 transition-transform duration-300">
                     {item.title}
                   </h3>
                   <p className="text-gray-300 text-sm mb-3">
@@ -338,7 +401,7 @@ const GallerySection = () => {
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-coral-pink hover:text-white transition-colors duration-300"
+                      className="inline-flex items-center text-coral-pink hover:text-white transition-colors duration-300 transform-gpu hover:scale-110"
                     >
                       <span className="mr-2">View Reel</span>
                       <ExternalLink size={16} />
@@ -347,23 +410,26 @@ const GallerySection = () => {
                 </div>
               </div>
 
-              {/* Category Badge */}
-              <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="px-3 py-1 bg-coral-pink/80 backdrop-blur-sm rounded-full text-white text-xs font-medium">
+              {/* Enhanced Category Badge */}
+              <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform-gpu group-hover:scale-110">
+                <span className="px-3 py-1 bg-gradient-to-r from-coral-pink/80 to-champagne-gold/80 backdrop-blur-sm rounded-full text-white text-xs font-medium shadow-lg">
                   {item.category}
                 </span>
               </div>
 
-              {/* Hover Effect Icon */}
-              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-8 h-8 bg-coral-pink rounded-full flex items-center justify-center">
+              {/* Enhanced Hover Effect Icon */}
+              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform-gpu group-hover:scale-110 group-hover:rotate-12">
+                <div className="w-10 h-10 bg-gradient-to-r from-coral-pink to-champagne-gold rounded-full flex items-center justify-center shadow-lg">
                   {item.type === 'video' ? (
-                    <Play className="text-white" size={16} />
+                    <Play className="text-white" size={18} />
                   ) : (
-                    <ExternalLink className="text-white" size={16} />
+                    <ExternalLink className="text-white" size={18} />
                   )}
                 </div>
               </div>
+
+              {/* 3D Effect Shadow */}
+              <div className="absolute inset-0 bg-black/20 rounded-2xl transform translate-y-2 translate-x-2 -z-10 group-hover:translate-y-4 group-hover:translate-x-4 transition-transform duration-300"></div>
             </div>
           ))}
         </div>
@@ -402,10 +468,10 @@ const GallerySection = () => {
         </div>
       </div>
 
-      {/* Background Effects */}
+      {/* Enhanced Background Effects */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-coral-pink/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-royal-violet/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-coral-pink/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-royal-violet/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
     </section>
   );

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -114,8 +113,17 @@ export default {
 					'50%': { boxShadow: '0 0 40px rgba(255, 107, 157, 0.8)' }
 				},
 				'shimmer': {
-					'0%': { transform: 'translateX(-100%)' },
-					'100%': { transform: 'translateX(100%)' }
+					'0%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+					'100%': { backgroundPosition: '0% 50%' }
+				},
+				'rotate-y': {
+					'0%': { transform: 'rotateY(0deg)' },
+					'100%': { transform: 'rotateY(360deg)' }
+				},
+				'rotate-x': {
+					'0%': { transform: 'rotateX(0deg)' },
+					'100%': { transform: 'rotateX(360deg)' }
 				}
 			},
 			animation: {
@@ -123,7 +131,9 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite alternate',
-				'shimmer': 'shimmer 2s linear infinite'
+				'shimmer': 'shimmer 3s linear infinite',
+				'rotate-y': 'rotate-y 20s linear infinite',
+				'rotate-x': 'rotate-x 15s linear infinite reverse'
 			}
 		}
 	},
