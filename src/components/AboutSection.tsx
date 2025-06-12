@@ -1,117 +1,123 @@
-
 import React from 'react';
-import { Quote, Award, Users, Mic } from 'lucide-react';
+import { Sparkles, Mic, Star } from 'lucide-react';
 
-const AboutSection = () => {
+const HeroSection = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-black to-royal-violet-dark relative overflow-hidden">
-      {/* Enhanced Background Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-32 h-32 border border-coral-pink rounded-full animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 border border-champagne-gold rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-coral-pink/10 to-royal-violet/10 rounded-full blur-3xl"></div>
+    <section id="home" className="min-h-screen relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/f39d3c26-6bbd-4508-bedc-a63d3a0d2445.png"
+          alt="Nisarga Gowda"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-royal-violet-dark/70 to-black/80"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 transform-gpu hover:scale-105 transition-transform duration-300">
-            About <span className="gradient-text">Nisarga</span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-coral-pink to-champagne-gold mx-auto animate-shimmer"></div>
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 animate-float">
+          <Sparkles className="text-champagne-gold opacity-60" size={32} />
         </div>
+        {/* Star on left side */}
+        <div className="absolute top-20 left-1/4 animate-float" style={{ animationDelay: '2s' }}>
+          <Star className="text-coral-pink opacity-60" size={64} />
+        </div>
+        <div className="absolute bottom-40 left-20 animate-float" style={{ animationDelay: '4s' }}>
+          <Mic className="text-champagne-gold opacity-60" size={28} />
+        </div>
+        
+        {/* 3D Gradient Orbs */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-royal-violet to-coral-pink rounded-full opacity-30 blur-3xl animate-pulse transform-gpu perspective-1000 rotate-x-12"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-coral-pink to-champagne-gold rounded-full opacity-30 blur-3xl animate-pulse transform-gpu perspective-1000 rotate-y-12" style={{ animationDelay: '3s' }}></div>
+        
+        {/* Floating 3D Elements */}
+        <div className="absolute top-1/3 right-1/3 w-32 h-32 bg-gradient-to-br from-champagne-gold/20 to-coral-pink/20 rounded-full backdrop-blur-sm border border-white/10 animate-float transform-gpu rotate-45" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-24 h-24 bg-gradient-to-br from-royal-violet/20 to-champagne-gold/20 rounded-full backdrop-blur-sm border border-white/10 animate-float transform-gpu -rotate-45" style={{ animationDelay: '4s' }}></div>
+      </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Text Content */}
-          <div className="space-y-6">
-            <div className="glassmorphism p-8 rounded-2xl transform-gpu hover:scale-105 transition-all duration-500 hover:shadow-2xl">
-              <Quote className="text-coral-pink mb-4 animate-float" size={32} />
-              <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                Nisarga Gowda is a <span className="text-coral-pink font-semibold">Professional Multilingual Emcee</span>, 
-                TV Anchor, Model, and Influencer with <span className="text-champagne-gold font-semibold">3+ years of experience</span> and 
-                <span className="text-royal-violet-light font-semibold"> 500+ shows</span>.
-              </p>
-              
-              <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                She has entertained <span className="text-coral-pink font-semibold">30,000+ live audiences</span> and hosted 
-                legendary events like <span className="text-champagne-gold font-semibold">Vijay Prakash's concert (3 times)</span>.
-              </p>
-              
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Fluent in <span className="text-royal-violet-light font-semibold">5 languages</span>, she lights up weddings, 
-                corporate gigs, celebrity events, and concerts with grace, energy, and charm.
-              </p>
+      {/* Main content container with flex */}
+      <div className="relative z-10 min-h-screen flex items-center justify-center">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-center gap-12 max-w-7xl">
+          {/* Text Content on left */}
+          <div className="flex-1 text-center md:text-left max-w-xl">
+            <h1 className="text-5xl md:text-7xl font-playfair font-bold text-white mb-6 transform-gpu hover:scale-105 transition-transform duration-300">
+              <span className="block drop-shadow-2xl">Emcee</span>
+              <span className="gradient-text drop-shadow-2xl animate-shimmer bg-gradient-to-r from-coral-pink via-champagne-gold to-royal-violet bg-clip-text text-transparent bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-1000">Nisarga Gowda</span>
+            </h1>
+
+            <div className="text-xl md:text-2xl text-gray-200 mb-4 font-light drop-shadow-lg">
+              Multilingual Emcee • Entertainer • Corporate Presenter
+            </div>
+            
+            <div className="text-lg md:text-xl text-coral-pink mb-8 font-medium drop-shadow-lg">
+              Anchor ~ Moderator ~ Energizer ~ Presenter
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="glassmorphism p-6 rounded-xl text-center transform-gpu hover:scale-105 hover:rotate-1 transition-all duration-300">
-                <Award className="text-champagne-gold mx-auto mb-3 animate-float" size={32} />
-                <div className="text-coral-pink font-semibold">Award Winner</div>
-                <div className="text-gray-400 text-sm">Excellence in Entertainment</div>
-              </div>
+            <div className="text-gray-300 mb-8 text-sm md:text-base drop-shadow-lg">
+              Languages: <span className="text-champagne-gold font-semibold">Kannada • English • Hindi • Telugu • Tamil</span>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-start items-center">
+              <a
+                href="#contact"
+                className="relative overflow-hidden bg-gradient-to-r from-coral-pink to-royal-violet text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl group transform-gpu"
+              >
+                <span className="relative z-10">Book Now</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-champagne-gold to-coral-pink opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 rounded-full bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+              </a>
               
-              <div className="glassmorphism p-6 rounded-xl text-center transform-gpu hover:scale-105 hover:-rotate-1 transition-all duration-300">
-                <Users className="text-coral-pink mx-auto mb-3 animate-float" size={32} />
-                <div className="text-champagne-gold font-semibold">Crowd Favorite</div>
-                <div className="text-gray-400 text-sm">30K+ Happy Audience</div>
+              <a
+                href="#about"
+                className="border-2 border-champagne-gold text-champagne-gold px-8 py-4 rounded-full font-semibold text-lg hover:bg-champagne-gold hover:text-black transition-all duration-500 hover:scale-110 hover:shadow-2xl transform-gpu backdrop-blur-sm"
+              >
+                Learn More
+              </a>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-2xl mx-auto md:mx-0">
+              <div className="text-center glassmorphism p-4 rounded-xl hover:scale-105 transition-transform duration-300 transform-gpu">
+                <div className="text-3xl font-bold text-coral-pink drop-shadow-lg">500+</div>
+                <div className="text-gray-300 text-sm">Events</div>
+              </div>
+              <div className="text-center glassmorphism p-4 rounded-xl hover:scale-105 transition-transform duration-300 transform-gpu">
+                <div className="text-3xl font-bold text-champagne-gold drop-shadow-lg">30,000+</div>
+                <div className="text-gray-300 text-sm">Audience</div>
+              </div>
+              <div className="text-center glassmorphism p-4 rounded-xl hover:scale-105 transition-transform duration-300 transform-gpu">
+                <div className="text-3xl font-bold text-royal-violet-light drop-shadow-lg">3+</div>
+                <div className="text-gray-300 text-sm">Years Exp</div>
+              </div>
+              <div className="text-center glassmorphism p-4 rounded-xl hover:scale-105 transition-transform duration-300 transform-gpu">
+                <div className="text-3xl font-bold text-coral-pink drop-shadow-lg">5</div>
+                <div className="text-gray-300 text-sm">Languages</div>
               </div>
             </div>
           </div>
 
-          {/* Right Side - Enhanced Image with new photo */}
-          <div className="relative">
-            <div className="relative z-10">
-              {/* Main Image with new photo */}
-              <div className="w-full h-96 bg-gradient-to-br from-coral-pink via-royal-violet to-champagne-gold rounded-2xl p-1 transform-gpu hover:scale-105 transition-all duration-500 hover:shadow-2xl">
-                <div className="w-full h-full rounded-2xl overflow-hidden relative">
-                  <img 
-                    src="/lovable-uploads/4b6c0e3c-6011-46cf-9ab7-1d860044c081.png"
-                    alt="Nisarga Gowda at VK Food & Night Life Awards"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                </div>
-              </div>
-              
-              {/* Enhanced Floating Cards */}
-              <div className="absolute -top-6 -left-6 glassmorphism p-4 rounded-xl animate-float transform-gpu hover:scale-110 transition-transform duration-300">
-                <Mic className="text-coral-pink" size={24} />
-                <div className="text-white font-semibold text-sm mt-2">Live Events</div>
-              </div>
-              
-              <div className="absolute -bottom-6 -right-6 glassmorphism p-4 rounded-xl animate-float transform-gpu hover:scale-110 transition-transform duration-300" style={{ animationDelay: '2s' }}>
-                <Quote className="text-champagne-gold" size={24} />
-                <div className="text-white font-semibold text-sm mt-2">Multilingual</div>
-              </div>
+          {/* Picture Circle on right */}
+          <div className="flex-shrink-0 relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-coral-pink via-royal-violet to-champagne-gold p-1 animate-glow transform-gpu hover:scale-105 transition-transform duration-500 overflow-visible">
+            <div className="w-full h-full rounded-full bg-black/20 backdrop-blur-lg flex items-center justify-center border border-white/20 relative overflow-visible">
+              <img
+                src="/lovable-uploads/f39d3c26-6bbd-4508-bedc-a63d3a0d2445.png"
+                alt="Profile"
+                className="rounded-full w-3/4 h-3/4 object-cover"
+              />
+              {/* Left light ray */}
+              <div className="absolute top-1/2 left-0 -translate-y-1/2 w-24 h-2 bg-gradient-to-r from-yellow-300/80 to-transparent rounded-full blur-xl animate-pulse"></div>
+              {/* Right light ray */}
+              <div className="absolute top-1/2 right-0 -translate-y-1/2 w-24 h-2 bg-gradient-to-l from-yellow-300/80 to-transparent rounded-full blur-xl animate-pulse"></div>
             </div>
-
-            {/* Enhanced Background Decorations */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-coral-pink to-royal-violet rounded-full opacity-20 blur-3xl -z-10 animate-pulse"></div>
-            <div className="absolute inset-0 rounded-2xl border border-champagne-gold/20 transform rotate-3 scale-110 -z-10"></div>
-            <div className="absolute inset-0 rounded-2xl border border-coral-pink/20 transform -rotate-2 scale-105 -z-10"></div>
-          </div>
-        </div>
-
-        {/* Enhanced Social Media Links */}
-        <div className="text-center mt-16">
-          <div className="text-gray-400 mb-4">Follow the Journey</div>
-          <div className="flex justify-center space-x-6">
-            <a
-              href="https://instagram.com/thecurlygirly__"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-coral-pink hover:text-white transition-all duration-300 font-semibold transform-gpu hover:scale-110 hover:rotate-3"
-            >
-              @thecurlygirly__
-            </a>
-            <span className="text-gray-600">•</span>
-            <a
-              href="https://youtube.com/@thecrazycurly__"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-champagne-gold hover:text-white transition-all duration-300 font-semibold transform-gpu hover:scale-110 hover:-rotate-3"
-            >
-              @thecrazycurly__
-            </a>
+            {/* Mic Icon */}
+            <div className="absolute -top-6 -right-6 bg-gradient-to-r from-champagne-gold to-coral-pink text-black rounded-full p-4 animate-bounce shadow-2xl">
+              <Mic size={28} />
+            </div>
+            {/* 3D Ring Effect */}
+            <div className="absolute inset-0 rounded-full border-2 border-champagne-gold/30 animate-spin" style={{ animationDuration: '20s' }}></div>
+            <div className="absolute inset-4 rounded-full border border-coral-pink/30 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
           </div>
         </div>
       </div>
@@ -119,4 +125,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default HeroSection;
