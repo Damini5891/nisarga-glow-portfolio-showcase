@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/lovable-uploads/f39d3c26-6bbd-4508-bedc-a63d3a0d2445.png"
+          src="/events/6d1402bc-8510-4558-9831-842bf6eb6461.png"
           alt="Nisarga Gowda"
           className="w-full h-full object-cover"
         />
@@ -55,7 +55,7 @@ const HeroSection = () => {
             </div>
 
             <div className="text-gray-300 mb-8 text-sm md:text-base drop-shadow-lg">
-              Languages: <span className="text-champagne-gold font-semibold">Kannada • English • Hindi • Telugu • Tamil</span>
+              Languages: <span className="text-champagne-gold font-semibold">Kannada • English • Hindi • Telugu</span> <span className="text-gray-400">(conversational Tamil)</span>
             </div>
 
             {/* CTA Buttons */}
@@ -92,7 +92,7 @@ const HeroSection = () => {
                 <div className="text-gray-300 text-sm">Years Exp</div>
               </div>
               <div className="text-center glassmorphism p-4 rounded-xl hover:scale-105 transition-transform duration-300 transform-gpu">
-                <div className="text-3xl font-bold text-coral-pink drop-shadow-lg">5</div>
+                <div className="text-3xl font-bold text-coral-pink drop-shadow-lg">4</div>
                 <div className="text-gray-300 text-sm">Languages</div>
               </div>
             </div>
@@ -102,7 +102,7 @@ const HeroSection = () => {
           <div className="flex-shrink-0 relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-coral-pink via-royal-violet to-champagne-gold p-1 animate-glow transform-gpu hover:scale-105 transition-transform duration-500 overflow-visible">
             <div className="w-full h-full rounded-full bg-black/20 backdrop-blur-lg flex items-center justify-center border border-white/20 relative overflow-visible">
               <img
-                src="/lovable-uploads/f39d3c26-6bbd-4508-bedc-a63d3a0d2445.png"
+                src="/events/6d1402bc-8510-4558-9831-842bf6eb6461.png"
                 alt="Profile"
                 className="rounded-full w-3/4 h-3/4 object-cover"
               />
