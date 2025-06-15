@@ -323,6 +323,16 @@ export const galleryItems: GalleryItem[] = [
         title: 'Professional Wedding Host',
         category: 'Ceremonies',
         description: 'Expert wedding ceremony management and guest interaction'
-      }
+      },
+      { type: "image", src: "/events/614d296f-e30d-47ab-873d-d7a78d2f9e58.png", title: "Event 1 Highlight", category: "Event 1", description: "Moments from event 1" },
+      { type: "image", src: "/events/886d7bac-7931-4ba3-bad3-9802faa41539.png", title: "Event 2 Highlight", category: "Event 2", description: "Moments from event 2" },
+      { type: "image", src: "/events/a671bda0-afdd-4510-97ee-754259c21e44.png", title: "Event 3 Highlight", category: "Event 3", description: "Moments from event 3" },
+      { type: "image", src: "/events/3fc3b40e-506b-4beb-acf7-7d7c6c388af0.png", title: "Event 4 Highlight", category: "Event 4", description: "Moments from event 4" },
+      { type: "image", src: "/events/329327c5-d612-470e-aa06-8173ddbab3c3.png", title: "Event 5 Highlight", category: "Event 5", description: "Moments from event 5" },
+      { type: "image", src: "/events/fe3863ff-3975-4735-ae90-2a4917a973b9.png", title: "Event 6 Highlight", category: "Event 6", description: "Moments from event 6" },
+      { type: "image", src: "/events/2c3d3f88-1cea-4375-8480-5bae9ee6bee1.png", title: "Event 7 Highlight", category: "Event 7", description: "Moments from event 7" },
+      { type: "image", src: "/events/7d7f1e59-b6b8-44f0-8e1a-90078f012b23.png", title: "Event 8 Highlight", category: "Event 8", description: "Moments from event 8" },
+      { type: "image", src: "/events/b6fcb384-fb23-40c8-8ed5-210f23b55c55.png", title: "Event 9 Highlight", category: "Event 9", description: "Moments from event 9" },
+      { type: "image", src: "/events/f0f84489-9331-4a86-a44f-4afc3f382778.png", title: "Event 10 Highlight", category: "Event 10", description: "Moments from event 10" }
 ];
-export const categories = ['All', 'Concerts', 'Corporate', 'Ceremonies', 'Featured', 'Media'];
+export const categories = ['All', 'Concerts', 'Corporate', 'Ceremonies', 'Featured', 'Media', 'Event 1', 'Event 2', 'Event 3', 'Event 4', 'Event 5', 'Event 6', 'Event 7', 'Event 8', 'Event 9', 'Event 10'];

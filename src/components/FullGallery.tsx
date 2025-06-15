@@ -25,7 +25,7 @@ const FullGallery = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-coral-pink to-champagne-gold mx-auto mt-6 animate-shimmer"></div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12 overflow-x-auto pb-2">
           {categories.map((filter) => (
             <button
               key={filter}
@@ -41,11 +41,11 @@ const FullGallery = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
           {filteredItems.map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 aspect-square cursor-pointer transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl"
+              className="mb-6 break-inside-avoid group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 cursor-pointer transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl"
             >
               {item.type === 'image' && item.src ? (
                 <img
