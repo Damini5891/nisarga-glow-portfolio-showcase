@@ -77,12 +77,12 @@ const AboutSection = () => {
               </div>
               
               {/* Enhanced Floating Cards */}
-              <div className="absolute -top-6 -left-6 glassmorphism p-4 rounded-xl animate-float transform-gpu hover:scale-110 transition-transform duration-300">
+              <div className="absolute -top-6 -left-6 glassmorphism p-4 rounded-xl animate-float transform-gpu hover:scale-110 transition-transform duration-700">
                 <Mic className="text-coral-pink" size={24} />
                 <div className="text-white font-semibold text-sm mt-2">Live Events</div>
               </div>
               
-              <div className="absolute -bottom-6 -right-6 glassmorphism p-4 rounded-xl animate-float transform-gpu hover:scale-110 transition-transform duration-300" style={{ animationDelay: '2s' }}>
+              <div className="absolute -bottom-6 -right-6 glassmorphism p-4 rounded-xl animate-float transform-gpu hover:scale-110 transition-transform duration-700" style={{ animationDelay: '2s' }}>
                 <Quote className="text-champagne-gold" size={24} />
                 <div className="text-white font-semibold text-sm mt-2">Multilingual</div>
               </div>

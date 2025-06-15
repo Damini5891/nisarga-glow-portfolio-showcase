@@ -84,7 +84,7 @@ const HeroSection = () => {
                 <div className="text-gray-300 text-sm">Events</div>
               </div>
               <div className="text-center glassmorphism p-4 rounded-xl hover:scale-105 transition-transform duration-300 transform-gpu">
-                <div className="text-3xl font-bold text-champagne-gold drop-shadow-lg">30,000+</div>
+                <div className="text-3xl font-bold text-champagne-gold drop-shadow-lg">3000+</div>
                 <div className="text-gray-300 text-sm">Audience</div>
               </div>
               <div className="text-center glassmorphism p-4 rounded-xl hover:scale-105 transition-transform duration-300 transform-gpu">
