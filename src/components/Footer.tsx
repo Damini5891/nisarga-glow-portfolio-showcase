@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart, Instagram, Youtube, Mail, Phone } from 'lucide-react';
+import { Heart, Instagram, Youtube, Mail, Phone, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -62,6 +62,14 @@ const Footer = () => {
                 className="text-champagne-gold hover:text-white transition-colors duration-300"
               >
                 <Youtube size={20} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nisargagowda"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-white transition-colors duration-300"
+              >
+                <Linkedin size={20} />
               </a>
             </div>
           </div>
