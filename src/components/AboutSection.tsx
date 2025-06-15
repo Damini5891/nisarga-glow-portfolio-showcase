@@ -37,18 +37,22 @@ const AboutSection = () => {
               </p>
               
               <p className="text-lg text-gray-300 leading-relaxed">
-                Fluent in <span className="text-royal-violet-light font-semibold">5 languages</span>, she lights up weddings, 
+                Fluent in <span className="text-royal-violet-light font-semibold">4 languages</span> with conversational Tamil, she lights up weddings,
                 corporate gigs, celebrity events, and concerts with grace, energy, and charm.
+              </p>
+
+              <p className="text-lg text-gray-300 leading-relaxed">
+                With a passion for connecting with diverse audiences, she thrives on both high-energy concerts and intimate gatherings.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Her confident stage presence is matched by a warm, friendly charm that leaves lasting impressions.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                Beyond hosting, Nisarga loves exploring new cultures and capturing memories through her lens.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="glassmorphism p-6 rounded-xl text-center transform-gpu hover:scale-105 hover:rotate-1 transition-all duration-300">
-                <Award className="text-champagne-gold mx-auto mb-3 animate-float" size={32} />
-                <div className="text-coral-pink font-semibold">Award Winner</div>
-                <div className="text-gray-400 text-sm">Excellence in Entertainment</div>
-              </div>
-              
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="glassmorphism p-6 rounded-xl text-center transform-gpu hover:scale-105 hover:-rotate-1 transition-all duration-300">
                 <Users className="text-coral-pink mx-auto mb-3 animate-float" size={32} />
                 <div className="text-champagne-gold font-semibold">Crowd Favorite</div>
@@ -63,9 +67,9 @@ const AboutSection = () => {
               {/* Main Image with new photo */}
               <div className="w-full h-96 bg-gradient-to-br from-coral-pink via-royal-violet to-champagne-gold rounded-2xl p-1 transform-gpu hover:scale-105 transition-all duration-500 hover:shadow-2xl">
                 <div className="w-full h-full rounded-2xl overflow-hidden relative">
-                  <img 
-                    src="/lovable-uploads/4b6c0e3c-6011-46cf-9ab7-1d860044c081.png"
-                    alt="Nisarga Gowda at VK Food & Night Life Awards"
+                  <img
+                    src="/events/6d1402bc-8510-4558-9831-842bf6eb6461.png"
+                    alt="Nisarga Gowda with microphone"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
