@@ -102,7 +102,7 @@ const HeroSection = () => {
           <div className="flex-shrink-0 relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-coral-pink via-royal-violet to-champagne-gold p-1 animate-glow transform-gpu hover:scale-105 transition-transform duration-500 overflow-visible">
             <div className="w-full h-full rounded-full bg-black/20 backdrop-blur-lg flex items-center justify-center border border-white/20 relative overflow-visible">
               <img
-                src="/events/6d1402bc-8510-4558-9831-842bf6eb6461.png"
+                src="/random/IMG_5904.JPEG"
                 alt="Profile"
                 className="rounded-full w-3/4 h-3/4 object-cover"
               />

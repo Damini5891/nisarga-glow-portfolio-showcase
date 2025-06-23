@@ -58,7 +58,13 @@ const AboutSection = () => {
                 <div className="text-champagne-gold font-semibold">Crowd Favorite</div>
                 <div className="text-gray-400 text-sm">30K+ Happy Audience</div>
               </div>
+               <div className="glassmorphism p-6 rounded-xl text-center transform-gpu hover:scale-105 hover:-rotate-1 transition-all duration-300">
+                <Users className="text-coral-pink mx-auto mb-3 animate-float" size={32} />
+                <div className="text-champagne-gold font-semibold">Crowd Favorite</div>
+                <div className="text-gray-400 text-sm">30K+ Happy Audience</div>
+              </div>
             </div>
+            
           </div>
 
           {/* Right Side - Enhanced Image with new photo */}
@@ -66,11 +72,11 @@ const AboutSection = () => {
             <div className="relative z-10">
               {/* Main Image with new photo */}
               <div className="w-full h-96 bg-gradient-to-br from-coral-pink via-royal-violet to-champagne-gold rounded-2xl p-1 transform-gpu hover:scale-105 transition-all duration-500 hover:shadow-2xl">
-                <div className="w-full h-full rounded-2xl overflow-hidden relative">
+                <div className="w-full h-96 rounded-2xl overflow-hidden relative">
                   <img
-                    src="/events/6d1402bc-8510-4558-9831-842bf6eb6461.png"
+                    src="/events/ad0e8442-6354-4420-8ba0-3f2cb1421c08.png"
                     alt="Nisarga Gowda with microphone"
-                    className="w-full h-full object-cover"
+                    className="w-full h-96 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>

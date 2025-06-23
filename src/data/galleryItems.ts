@@ -324,8 +324,8 @@ export const galleryItems: GalleryItem[] = [
         category: 'Ceremonies',
         description: 'Expert wedding ceremony management and guest interaction'
       },
-      { type: "image", src: "/events/614d296f-e30d-47ab-873d-d7a78d2f9e58.png", title: "Event 1 Highlight", category: "Events", description: "Moments from event 1" },
-      { type: "image", src: "/events/886d7bac-7931-4ba3-bad3-9802faa41539.png", title: "Event 2 Highlight", category: "Events", description: "Moments from event 2" },
+      { type: "image", src: "/events/614d296f-e30d-47ab-873d-d7a78d2f9e58.png", title: "Vijaya Prakash Concert", category: "Events", description: "Moments from event 1" },
+      { type: "image", src: "/events/886d7bac-7931-4ba3-bad3-9802faa41539.png", title: "Wedding", category: "Events", description: "Moments from event 2" },
       { type: "image", src: "/events/a671bda0-afdd-4510-97ee-754259c21e44.png", title: "Event 3 Highlight", category: "Events", description: "Moments from event 3" },
       { type: "image", src: "/events/3fc3b40e-506b-4beb-acf7-7d7c6c388af0.png", title: "Event 4 Highlight", category: "Events", description: "Moments from event 4" },
       { type: "image", src: "/events/329327c5-d612-470e-aa06-8173ddbab3c3.png", title: "Event 5 Highlight", category: "Events", description: "Moments from event 5" },
