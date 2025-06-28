@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/events/13.png"
+          src="/events/19.png"
           alt="Nisarga Gowda"
           className="w-full h-full object-cover"
         />

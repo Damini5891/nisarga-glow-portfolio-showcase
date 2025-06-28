@@ -31,7 +31,7 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/9.png',
+        src: '/events/23.png',
         title: 'Award Ceremony',
         category: 'Corporate',
         description: 'Elegant hosting for prestigious award functions'
@@ -45,21 +45,21 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/31.png',
+        src: '/events/17.png',
         title: 'Red Saree Performance',
         category: 'Ceremonies',
         description: 'Traditional elegance meets modern presentation'
       },
       {
         type: 'image',
-        src: '/events/7.png',
+        src: '/events/21.png',
         title: 'Grand Stage Event',
         category: 'Concerts',
         description: 'Commanding the stage at premium venues'
       },
       {
         type: 'image',
-        src: '/events/15.png',
+        src: '/events/21.png',
         title: 'Evening Performance',
         category: 'Ceremonies',
         description: 'Captivating audiences with charismatic presentation'
@@ -73,7 +73,7 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/28.png',
+        src: '/events/13.png',
         title: 'Traditional Concert',
         category: 'Concerts',
         description: 'Blending tradition with contemporary hosting'
@@ -87,21 +87,21 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/20.png',
+        src: '/events/5.png',
         title: 'Healthcare Event',
         category: 'Corporate',
         description: 'Supporting meaningful causes through events'
       },
       {
         type: 'image',
-        src: '/events/14.png',
+        src: '/events/20.png',
         title: 'Charity Foundation',
         category: 'Corporate',
         description: 'Contributing to social causes through entertainment'
       },
       {
         type: 'image',
-        src: '/events/8.png',
+        src: '/events/22.png',
         title: 'Dynamic Presentation',
         category: 'Ceremonies',
         description: 'Bringing energy and excitement to every event'
@@ -115,7 +115,7 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/2.png',
+        src: '/events/4.png',
         title: 'Audience Connection',
         category: 'Concerts',
         description: 'Creating memorable moments with live audiences'
@@ -130,21 +130,21 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/25.png',
+        src: '/events/10.png',
         title: 'Red Sequin Performance',
         category: 'Concerts',
         description: 'Dazzling stage presence in glamorous red outfit'
       },
       {
         type: 'image',
-        src: '/events/27.png',
+        src: '/events/12.png',
         title: 'Stage Command',
         category: 'Concerts',
         description: 'Professional hosting with confident stage presence'
       },
       {
         type: 'image',
-        src: '/events/23.png',
+        src: '/events/8.png',
         title: 'Concert Hosting',
         category: 'Concerts',
         description: 'Energetic performance hosting large audiences'
@@ -165,7 +165,7 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/4.png',
+        src: '/events/18.png',
         title: 'TV Show Recording',
         category: 'Media',
         description: 'Professional TV hosting and content creation'
@@ -179,7 +179,7 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/10.png',
+        src: '/events/4.png',
         title: 'Louis Philippe Event',
         category: 'Corporate',
         description: 'Premium brand event hosting at Louis Philippe'
@@ -193,7 +193,7 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/17.png',
+        src: '/events/23.png',
         title: 'TV Production',
         category: 'Media',
         description: 'Behind-the-scenes TV show production work'
@@ -207,42 +207,42 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/5.png',
+        src: '/events/19.png',
         title: 'Kannada TV Show',
         category: 'Media',
         description: 'Regional television content presentation'
       },
       {
         type: 'image',
-        src: '/events/30.png',
+        src: '/events/16.png',
         title: 'Halloween Event',
         category: 'Ceremonies',
         description: 'Spooky season themed event hosting'
       },
       {
         type: 'image',
-        src: '/events/13.png',
+        src: '/events/19.png',
         title: 'Vijay Prakash Concert',
         category: 'Featured',
         description: 'Prestigious collaboration with music legend Vijay Prakash'
       },
       {
         type: 'image',
-        src: '/events/12.png',
+        src: '/events/18.png',
         title: 'TV Studio Hosting',
         category: 'Media',
         description: 'Professional studio environment presentation'
       },
       {
         type: 'image',
-        src: '/events/19.png',
+        src: '/events/3.png',
         title: 'Celebrity Interaction',
         category: 'Featured',
         description: 'Engaging with celebrities and VIP guests'
       },
       {
         type: 'image',
-        src: '/events/3.png',
+        src: '/events/15.png',
         title: 'Awards Night',
         category: 'Ceremonies',
         description: 'VK & Bangalore Mirror Food & Night Life Awards 2024'
@@ -256,14 +256,14 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/6.png',
+        src: '/events/20.png',
         title: 'Award Presentation',
         category: 'Ceremonies',
         description: 'Elegant award ceremony hosting duties'
       },
       {
         type: 'image',
-        src: '/events/16.png',
+        src: '/events/22.png',
         title: 'Red Lehenga Garden Event',
         category: 'Ceremonies',
         description: 'Beautiful outdoor ceremony hosting in elegant red attire'
@@ -277,21 +277,21 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/24.png',
+        src: '/events/9.png',
         title: 'Sequined Gown Evening',
         category: 'Concerts',
         description: 'Glamorous evening event hosting in stunning sequined attire'
       },
       {
         type: 'image',
-        src: '/events/22.png',
+        src: '/events/7.png',
         title: 'Black Sequin Wedding',
         category: 'Ceremonies',
         description: 'Elegant wedding ceremony hosting in sophisticated black gown'
       },
       {
         type: 'image',
-        src: '/events/18.png',
+        src: '/events/2.png',
         title: 'Interactive Wedding Host',
         category: 'Ceremonies',
         description: 'Engaging wedding guests with dynamic presentation style'
@@ -305,7 +305,7 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/26.png',
+        src: '/events/11.png',
         title: 'Garden Wedding Celebration',
         category: 'Ceremonies',
         description: 'Beautiful outdoor wedding hosting in vibrant red lehenga'
@@ -319,7 +319,7 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         type: 'image',
-        src: '/events/21.png',
+        src: '/events/6.png',
         title: 'Professional Wedding Host',
         category: 'Ceremonies',
         description: 'Expert wedding ceremony management and guest interaction'
@@ -327,12 +327,12 @@ export const galleryItems: GalleryItem[] = [
       { type: "image", src: "/events/614d296f-e30d-47ab-873d-d7a78d2f9e58.png", title: "Vijaya Prakash Concert", category: "Events", description: "Moments from event 1" },
       { type: "image", src: "/events/886d7bac-7931-4ba3-bad3-9802faa41539.png", title: "Wedding", category: "Events", description: "Moments from event 2" },
       { type: "image", src: "/events/a671bda0-afdd-4510-97ee-754259c21e44.png", title: "Event 3 Highlight", category: "Events", description: "Moments from event 3" },
-      { type: "image", src: "/events/9.png", title: "Event 4 Highlight", category: "Events", description: "Moments from event 4" },
+      { type: "image", src: "/events/23.png", title: "Event 4 Highlight", category: "Events", description: "Moments from event 4" },
       { type: "image", src: "/events/329327c5-d612-470e-aa06-8173ddbab3c3.png", title: "Event 5 Highlight", category: "Events", description: "Moments from event 5" },
-      { type: "image", src: "/events/31.png", title: "Event 6 Highlight", category: "Events", description: "Moments from event 6" },
-      { type: "image", src: "/events/7.png", title: "Event 7 Highlight", category: "Events", description: "Moments from event 7" },
-      { type: "image", src: "/events/15.png", title: "Event 8 Highlight", category: "Events", description: "Moments from event 8" },
+      { type: "image", src: "/events/17.png", title: "Event 6 Highlight", category: "Events", description: "Moments from event 6" },
+      { type: "image", src: "/events/21.png", title: "Event 7 Highlight", category: "Events", description: "Moments from event 7" },
+      { type: "image", src: "/events/21.png", title: "Event 8 Highlight", category: "Events", description: "Moments from event 8" },
       { type: "image", src: "/events/b6fcb384-fb23-40c8-8ed5-210f23b55c55.png", title: "Event 9 Highlight", category: "Events", description: "Moments from event 9" },
-      { type: "image", src: "/events/28.png", title: "Event 10 Highlight", category: "Events", description: "Moments from event 10" }
+      { type: "image", src: "/events/13.png", title: "Event 10 Highlight", category: "Events", description: "Moments from event 10" }
 ];
 export const categories = ['All', 'Concerts', 'Corporate', 'Ceremonies', 'Featured', 'Media', 'Events'];

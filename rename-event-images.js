@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // 1. Gather all image files in public/events
-const eventsDir = path.join(__dirname, 'public', 'events');
+const eventsDir = path.join(__dirname, 'public', 'events', 'wedding');
 const exts = ['.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp', '.bmp'];
 
 function getEventImages() {
