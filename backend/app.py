@@ -7,6 +7,7 @@ import json
 import uuid
 
 app = Flask(__name__)
+app.config['MAX_CONTENT_LENGTH'] = 20 * 1024 * 1024  # 20 MB limit
 CORS(app)
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -30,6 +31,10 @@ def load_json(path):
 def save_json(path, data):
     with open(path, 'w') as f:
         json.dump(data, f, indent=2)
+
+@app.errorhandler(413)
+def too_large(e):
+    return jsonify({'error': 'file too large'}), 413
 
 @app.route('/api/gallery', methods=['GET'])
 def get_gallery():
