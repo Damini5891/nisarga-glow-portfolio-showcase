@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import { Camera, Play, ExternalLink } from 'lucide-react';
-import { galleryItems, categories } from '../data/galleryItems';
+import { useQuery } from '@tanstack/react-query';
+
+const fetchGallery = async () => {
+  const res = await fetch('/api/gallery');
+  return res.json();
+};
 
 const GallerySection = () => {
   const [activeFilter, setActiveFilter] = useState('All');
-
-
-
-  const filteredItems = activeFilter === 'All'
-    ? galleryItems
-    : galleryItems.filter(item => item.category === activeFilter);
+  const { data: galleryItems = [] } = useQuery({ queryKey: ['gallery'], queryFn: fetchGallery });
+  const categories = ['All', ...Array.from(new Set(galleryItems.map((g: any) => g.category)))]
+  const filteredItems =
+    activeFilter === 'All'
+      ? galleryItems
+      : galleryItems.filter((item: any) => item.category === activeFilter);
 
   const displayItems = filteredItems.slice(0, 8);
 
