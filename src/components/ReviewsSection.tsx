@@ -1,22 +1,14 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import { useQuery } from '@tanstack/react-query';
 
-const reviews = [
-  {
-    text: 'Nisarga hosted our corporate event with incredible professionalism. The audience was thrilled!',
-    author: 'Rajesh K.'
-  },
-  {
-    text: 'Her energy is contagious! We loved her at our wedding reception.',
-    author: 'Deepa & Nitin'
-  },
-  {
-    text: 'One of the best emcees we have worked with. Highly recommended!',
-    author: 'Event Co.'
-  }
-];
+const fetchReviews = async () => {
+  const res = await fetch('/api/reviews');
+  return res.json();
+};
 
 const ReviewsSection = () => {
+  const { data: reviews = [] } = useQuery({ queryKey: ['reviews'], queryFn: fetchReviews });
   return (
     <section id="reviews" className="py-20 bg-gradient-to-b from-black to-royal-violet-dark">
       <div className="container mx-auto px-6">
