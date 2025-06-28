@@ -76,6 +76,7 @@ const AboutSection = () => {
                   <img
                     src="/events/ad0e8442-6354-4420-8ba0-3f2cb1421c08.png"
                     alt="Nisarga Gowda with microphone"
+                    loading="lazy"
                     className="w-full h-96 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
