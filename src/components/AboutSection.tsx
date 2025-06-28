@@ -74,7 +74,7 @@ const AboutSection = () => {
               <div className="w-full h-96 bg-gradient-to-br from-coral-pink via-royal-violet to-champagne-gold rounded-2xl p-1 transform-gpu hover:scale-105 transition-all duration-500 hover:shadow-2xl">
                 <div className="w-full h-96 rounded-2xl overflow-hidden relative">
                   <img
-                    src="/events/ad0e8442-6354-4420-8ba0-3f2cb1421c08.png"
+                    src="/events/random/17.png"
                     alt="Nisarga Gowda with microphone"
                     loading="lazy"
                     className="w-full h-96 object-cover"
