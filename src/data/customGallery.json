@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "type": "image",
+    "src": "/events/concert/1751212376705.jpg",
+    "title": "Vijaya Prakash Concert",
+    "category": "Concert",
+    "description": "Anchoring for vijaya prakash concert in Bangalore"
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1751212378247.jpg",
+    "title": "Vijaya Prakash Concert",
+    "category": "Concert",
+    "description": "Anchoring for vijaya prakash concert in Bangalore"
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/1751212519103.jpg",
+    "title": "Wedding Celebration",
+    "category": "Wedding",
+    "description": "Hosting wedding ceremony"
+  }
+]
