@@ -12,4 +12,7 @@ The frontend can be served with Vite in development:
 npm run dev
 ```
 
+During development, the Vite server proxies `/api` requests to `localhost:3000`,
+so keep the backend running in another terminal.
+
 Uploads are sent as base64 encoded JSON so no additional packages are needed.
