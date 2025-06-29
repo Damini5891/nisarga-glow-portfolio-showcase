@@ -21,15 +21,17 @@ const autoGallery: GalleryItem[] = Object.entries(imageModules).map(([path, url]
   const categorySlug = match?.[1] ?? 'events';
   const file = match?.[2] ?? '';
   const title = file.replace(/\.[^/.]+$/, '').replace(/[-_]/g, ' ');
+  const description = `${capitalize(categorySlug)} event - ${title}`;
   return {
     type: 'image',
     src: url as string,
     title,
     category: capitalize(categorySlug),
-    description: '',
+    description,
   };
 });
 
+import customGallery from './customGallery.json';
 const manualGallery: GalleryItem[] = [
   {
     type: 'video',
@@ -38,6 +40,7 @@ const manualGallery: GalleryItem[] = [
     url: 'https://www.instagram.com/reel/DJOZpguv6He/',
     description: 'Exclusive collaboration with music maestro Vijay Prakash',
   },
+  ...(customGallery as GalleryItem[]),
 ];
 
 export const galleryItems: GalleryItem[] = [...autoGallery, ...manualGallery];
