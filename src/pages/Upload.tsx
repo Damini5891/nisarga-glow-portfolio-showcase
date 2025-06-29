@@ -19,13 +19,28 @@ const UploadPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.image) return;
-    const data = new FormData();
-    data.append('eventType', form.eventType);
-    data.append('title', form.title);
-    data.append('description', form.description);
-    data.append('image', form.image);
-    await fetch('/api/upload', { method: 'POST', body: data });
-    alert('Uploaded');
+
+    if (form.image.size > 25 * 1024 * 1024) {
+      alert('File is larger than 25MB');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onloadend = async () => {
+      const payload = {
+        eventType: form.eventType,
+        title: form.title,
+        description: form.description,
+        image: (reader.result as string).split(',')[1],
+      };
+      await fetch('/api/upload', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      alert('Uploaded');
+    };
+    reader.readAsDataURL(form.image);
   };
 
   return (
