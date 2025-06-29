@@ -19,5 +19,12 @@
     "title": "Wedding Celebration",
     "category": "Wedding",
     "description": "Hosting wedding ceremony"
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1751214209512.jpg",
+    "title": "Vijaya prakash",
+    "category": "Concert",
+    "description": "anchoring for vijaya prakash concert in banagalore"
   }
 ]
