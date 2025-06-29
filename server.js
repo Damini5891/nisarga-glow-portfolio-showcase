@@ -34,6 +34,8 @@ function serveStatic(req, res) {
   });
 }
 
+const MAX_BODY_SIZE = 25 * 1024 * 1024; // 25MB
+
 const server = http.createServer((req, res) => {
   if (req.method === 'OPTIONS' && req.url.startsWith('/api/')) {
     res.writeHead(204, {
@@ -45,7 +47,16 @@ const server = http.createServer((req, res) => {
   }
   if (req.method === 'POST' && req.url === '/api/review') {
     let body = '';
-    req.on('data', chunk => (body += chunk));
+    let received = 0;
+    req.on('data', chunk => {
+      received += chunk.length;
+      if (received > MAX_BODY_SIZE) {
+        sendJson(res, 413, { error: 'Payload too large' });
+        req.destroy();
+        return;
+      }
+      body += chunk;
+    });
     req.on('end', () => {
       try {
         const { title, text, rating, author } = JSON.parse(body || '{}');
@@ -67,7 +78,16 @@ const server = http.createServer((req, res) => {
     });
   } else if (req.method === 'POST' && req.url === '/api/upload') {
     let body = '';
-    req.on('data', chunk => (body += chunk));
+    let received = 0;
+    req.on('data', chunk => {
+      received += chunk.length;
+      if (received > MAX_BODY_SIZE) {
+        sendJson(res, 413, { error: 'Payload too large' });
+        req.destroy();
+        return;
+      }
+      body += chunk;
+    });
     req.on('end', () => {
       try {
         const { eventType, title, description, image } = JSON.parse(body || '{}');

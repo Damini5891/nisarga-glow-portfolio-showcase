@@ -20,6 +20,11 @@ const UploadPage = () => {
     e.preventDefault();
     if (!form.image) return;
 
+    if (form.image.size > 25 * 1024 * 1024) {
+      alert('File is larger than 25MB');
+      return;
+    }
+
     const reader = new FileReader();
     reader.onloadend = async () => {
       const payload = {
