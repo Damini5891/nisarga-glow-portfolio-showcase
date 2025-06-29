@@ -10,7 +10,10 @@ const galleryFile = path.join(__dirname, 'src', 'data', 'customGallery.json');
 const reviewsFile = path.join(__dirname, 'src', 'data', 'reviews.json');
 
 function sendJson(res, status, data) {
-  res.writeHead(status, { 'Content-Type': 'application/json' });
+  res.writeHead(status, {
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*',
+  });
   res.end(JSON.stringify(data));
 }
 
@@ -32,6 +35,14 @@ function serveStatic(req, res) {
 }
 
 const server = http.createServer((req, res) => {
+  if (req.method === 'OPTIONS' && req.url.startsWith('/api/')) {
+    res.writeHead(204, {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Methods': 'POST,OPTIONS',
+    });
+    return res.end();
+  }
   if (req.method === 'POST' && req.url === '/api/review') {
     let body = '';
     req.on('data', chunk => (body += chunk));
