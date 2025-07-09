@@ -1,7 +1,5 @@
-
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Instagram, Youtube, Send, Calendar } from 'lucide-react';
-import { toast } from 'sonner';
+import { Mail, Phone, MapPin, Instagram, Youtube, Send } from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -9,28 +7,39 @@ const ContactSection = () => {
     email: '',
     eventType: '',
     eventDate: '',
-    message: ''
+    message: '',
   });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically handle form submission
-    toast.success("Message sent! I'll get back to you soon!");
-    setFormData({ name: '', email: '', eventType: '', eventDate: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  const [status, setStatus] = useState('');
 
   const eventTypes = [
     'Wedding', 'Corporate Event', 'Concert', 'Anniversary', 'Team Building',
     'Movie Promotion', 'Fashion Show', 'Press Meet', 'Product Launch',
     'Sports Event', 'College Fest', 'Award Night', 'Other'
   ];
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('Sending...');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        setStatus('Message sent!');
+        setFormData({ name: '', email: '', eventType: '', eventDate: '', message: '' });
+      } else {
+        setStatus('Failed to send message.');
+      }
+    } catch {
+      setStatus('Failed to send message.');
+    }
+  };
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-royal-violet-dark to-black relative overflow-hidden">
@@ -127,7 +136,6 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="glassmorphism p-8 rounded-2xl">
             <h3 className="text-2xl font-playfair font-bold text-white mb-6">Book Your Event</h3>
-            
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -142,7 +150,6 @@ const ContactSection = () => {
                     placeholder="Your full name"
                   />
                 </div>
-                
                 <div>
                   <label className="block text-gray-300 text-sm font-medium mb-2">Email</label>
                   <input
@@ -173,7 +180,6 @@ const ContactSection = () => {
                     ))}
                   </select>
                 </div>
-                
                 <div>
                   <label className="block text-gray-300 text-sm font-medium mb-2">Event Date</label>
                   <input
@@ -193,6 +199,7 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
+                  required
                   className="w-full bg-black/30 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-coral-pink focus:outline-none transition-colors duration-300 resize-none"
                   placeholder="Tell me about your event, requirements, and any special requests..."
                 ></textarea>
@@ -205,6 +212,7 @@ const ContactSection = () => {
                 <span>Send Message</span>
                 <Send size={20} />
               </button>
+              {status && <div className="text-white mt-2">{status}</div>}
             </form>
           </div>
         </div>

@@ -2,6 +2,7 @@ import http from 'http';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import nodemailer from 'nodemailer';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,6 +36,9 @@ function serveStatic(req, res) {
 }
 
 const MAX_BODY_SIZE = 25 * 1024 * 1024; // 25MB
+
+const EMAIL_USER = 'nisargaforbusiness@gmail.com';
+const EMAIL_PASS = '';  
 
 const server = http.createServer((req, res) => {
   if (req.method === 'OPTIONS' && req.url.startsWith('/api/')) {
@@ -112,6 +116,49 @@ const server = http.createServer((req, res) => {
         sendJson(res, 200, { success: true });
       } catch {
         sendJson(res, 400, { error: 'Invalid JSON' });
+      }
+    });
+  } else if (req.method === 'POST' && req.url === '/api/contact') {
+    let body = '';
+    let received = 0;
+    req.on('data', chunk => {
+      received += chunk.length;
+      if (received > MAX_BODY_SIZE) {
+        sendJson(res, 413, { error: 'Payload too large' });
+        req.destroy();
+        return;
+      }
+      body += chunk;
+    });
+    req.on('end', async () => {
+      try {
+        const { name, email, eventType, eventDate, message } = JSON.parse(body || '{}');
+        // Configure transporter
+        const transporter = nodemailer.createTransport({
+          service: 'gmail',
+          auth: {
+            user: EMAIL_USER, // your email
+            pass: EMAIL_PASS, // your app password
+          },
+        });
+        // Compose email
+        const mailOptions = {
+          from: EMAIL_USER,
+          to: 'raidamini2010@gmail.com', // <-- Replace with the email you want to receive submissions
+          subject: `New Contact Form Submission from ${name}`,
+          text: `
+Name: ${name}
+Email: ${email}
+Event Type: ${eventType}
+Event Date: ${eventDate}
+Message: ${message}
+          `,
+        };
+        await transporter.sendMail(mailOptions);
+        sendJson(res, 200, { success: true });
+      } catch (err) {
+        console.error('Nodemailer error:', err); // <-- Add this line
+        sendJson(res, 500, { error: 'Failed to send email' });
       }
     });
   } else {
