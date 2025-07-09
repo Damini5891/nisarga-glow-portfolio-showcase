@@ -80,7 +80,8 @@ const GallerySection = () => {
                   <p className="text-gray-300 text-sm mb-3">
                     {item.description}
                   </p>
-                  {item.url && (
+                  {/* REMOVE this block if you don't use item.url */}
+                  {/* {item.url && (
                     <a
                       href={item.url}
                       target="_blank"
@@ -90,7 +91,7 @@ const GallerySection = () => {
                       <span className="mr-2">View Reel</span>
                       <ExternalLink size={16} />
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
 

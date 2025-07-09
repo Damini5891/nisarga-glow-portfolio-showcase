@@ -32,17 +32,6 @@ const autoGallery: GalleryItem[] = Object.entries(imageModules).map(([path, url]
 });
 
 import customGallery from './customGallery.json';
-const manualGallery: GalleryItem[] = [
-  {
-    type: 'video',
-    title: 'Vijay Prakash Concert',
-    category: 'Featured',
-    url: 'https://www.instagram.com/reel/DJOZpguv6He/',
-    description: 'Exclusive collaboration with music maestro Vijay Prakash',
-  },
-  ...(customGallery as GalleryItem[]),
-];
 
-export const galleryItems: GalleryItem[] = [...autoGallery, ...manualGallery];
-
-export const categories = ['All', ...Array.from(new Set(galleryItems.map((item) => item.category)))];
+export const galleryItems = customGallery;
+export const categories = ['All', ...Array.from(new Set(customGallery.map((item) => item.category)))];

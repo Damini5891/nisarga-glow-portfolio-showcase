@@ -72,8 +72,11 @@ const FullGallery = () => {
                   <h3 className="text-white font-semibold mb-2 transform-gpu group-hover:scale-105 transition-transform duration-300">
                     {item.title}
                   </h3>
-                  <p className="text-gray-300 text-sm mb-3">{item.description}</p>
-                  {item.url && (
+                  <p className="text-gray-300 text-sm mb-3">
+                    {item.description}
+                  </p>
+                  {/* REMOVE this block if you don't use item.url */}
+                  {/* {item.url && (
                     <a
                       href={item.url}
                       target="_blank"
@@ -83,7 +86,7 @@ const FullGallery = () => {
                       <span className="mr-2">View Reel</span>
                       <ExternalLink size={16} />
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
 

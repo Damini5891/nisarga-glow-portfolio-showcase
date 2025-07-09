@@ -38,7 +38,7 @@ function serveStatic(req, res) {
 const MAX_BODY_SIZE = 25 * 1024 * 1024; // 25MB
 
 const EMAIL_USER = 'nisargaforbusiness@gmail.com';
-const EMAIL_PASS = '';  
+const EMAIL_PASS = 'Nisarga@1234';  
 
 const server = http.createServer((req, res) => {
   if (req.method === 'OPTIONS' && req.url.startsWith('/api/')) {
@@ -135,11 +135,13 @@ const server = http.createServer((req, res) => {
         const { name, email, eventType, eventDate, message } = JSON.parse(body || '{}');
         // Configure transporter
         const transporter = nodemailer.createTransport({
-          service: 'gmail',
+          host: 'smtp.gmail.com',
+          port: 587,
+          secure: false,
           auth: {
-            user: EMAIL_USER, // your email
-            pass: EMAIL_PASS, // your app password
-          },
+            user: EMAIL_USER,
+            pass: EMAIL_PASS
+          }
         });
         // Compose email
         const mailOptions = {

@@ -82,7 +82,7 @@ const Footer = () => {
             <span>for unforgettable events</span>
           </p>
           <p className="text-gray-600 text-sm mt-2">
-            © 2024 Emcee Nisarga Gowda. All rights reserved.
+            © 2025 Emcee Nisarga Gowda. All rights reserved.
           </p>
         </div>
       </div>
