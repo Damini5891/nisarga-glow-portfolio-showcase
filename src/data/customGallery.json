@@ -1,54 +1,380 @@
 [
-  { "type": "image", "src": "/events/concert/1.JPG", "title": "Opening Act Energy", "category": "Concert", "description": "The crowd comes alive as the first notes fill the air, setting the stage for an unforgettable night." },
-  { "type": "image", "src": "/events/concert/1751212376705.jpg", "title": "Spotlight Performance", "category": "Concert", "description": "A magical moment under the spotlight, capturing the passion and excitement of live music." },
-  { "type": "image", "src": "/events/concert/1751212378247.jpg", "title": "Rhythm and Lights", "category": "Concert", "description": "Vibrant lights and rhythmic beats create an electrifying atmosphere for all attendees." },
-  { "type": "image", "src": "/events/concert/1751214209512.jpg", "title": "Encore Applause", "category": "Concert", "description": "The audience erupts in applause, demanding one more song from their favorite artist." },
-  { "type": "image", "src": "/events/concert/2.JPG", "title": "Melodic Moments", "category": "Concert", "description": "A soulful performance that resonates with every music lover in the venue." },
-  { "type": "image", "src": "/events/concert/3.JPG", "title": "Crowd Connection", "category": "Concert", "description": "The artist connects with the audience, making every person feel part of the show." },
-  { "type": "image", "src": "/events/concert/4.JPEG", "title": "Guitar Solo", "category": "Concert", "description": "A breathtaking guitar solo that leaves the crowd in awe." },
-  { "type": "image", "src": "/events/concert/5.JPEG", "title": "Stage Presence", "category": "Concert", "description": "Commanding the stage with charisma and talent, the performer shines bright." },
-  { "type": "image", "src": "/events/concert/6.JPEG", "title": "Dancing Lights", "category": "Concert", "description": "Colorful lights dance across the stage, adding magic to the musical experience." },
-  { "type": "image", "src": "/events/concert/7.PNG", "title": "Final Bow", "category": "Concert", "description": "The artist takes a bow, closing the night with gratitude and joy." },
-
-  { "type": "image", "src": "/events/corporate/1.jpg", "title": "Welcoming Address", "category": "Corporate", "description": "Kicking off the event with a warm welcome and inspiring words." },
-  { "type": "image", "src": "/events/corporate/2.jpg", "title": "Networking Moments", "category": "Corporate", "description": "Professionals connect and share ideas during a lively networking session." },
-  { "type": "image", "src": "/events/corporate/3.jpg", "title": "Keynote Insights", "category": "Corporate", "description": "A keynote speaker delivers valuable insights to an engaged audience." },
-  { "type": "image", "src": "/events/corporate/4.jpg", "title": "Team Collaboration", "category": "Corporate", "description": "Colleagues collaborate and brainstorm, driving innovation forward." },
-  { "type": "image", "src": "/events/corporate/5.jpg", "title": "Award Ceremony", "category": "Corporate", "description": "Celebrating achievements and recognizing outstanding contributions." },
-  { "type": "image", "src": "/events/corporate/6.jpg", "title": "Panel Discussion", "category": "Corporate", "description": "Industry leaders share their perspectives in an engaging panel discussion." },
-  { "type": "image", "src": "/events/corporate/7.jpg", "title": "Product Launch", "category": "Corporate", "description": "Unveiling the latest innovations to an excited audience." },
-  { "type": "image", "src": "/events/corporate/8.jpg", "title": "Interactive Workshop", "category": "Corporate", "description": "Hands-on workshops foster learning and skill development." },
-  { "type": "image", "src": "/events/corporate/9.jpg", "title": "Closing Remarks", "category": "Corporate", "description": "Wrapping up the event with thoughtful reflections and future plans." },
-  { "type": "image", "src": "/events/corporate/10.jpg", "title": "Business Connections", "category": "Corporate", "description": "Building lasting business relationships in a professional setting." },
-  { "type": "image", "src": "/events/corporate/11.jpg", "title": "Corporate Gala", "category": "Corporate", "description": "An elegant evening celebrating corporate milestones and successes." },
-
-  { "type": "image", "src": "/events/crowd/1.JPEG", "title": "Excited Audience", "category": "Crowd", "description": "A sea of enthusiastic faces, ready for an amazing event." },
-  { "type": "image", "src": "/events/crowd/2.JPEG", "title": "Cheering Fans", "category": "Crowd", "description": "Fans cheer and celebrate, creating an electric atmosphere." },
-  { "type": "image", "src": "/events/crowd/3.JPEG", "title": "Unified Spirits", "category": "Crowd", "description": "The crowd moves as one, united by the energy of the moment." },
-  { "type": "image", "src": "/events/crowd/4.JPEG", "title": "Joyful Gathering", "category": "Crowd", "description": "Smiles and laughter fill the venue as people come together." },
-  { "type": "image", "src": "/events/crowd/IMG_3124.HEIC", "title": "Memorable Moments", "category": "Crowd", "description": "Capturing unforgettable memories with friends and fellow fans." },
-
-
-  { "type": "image", "src": "/events/wedding/1751212519103.jpg", "title": "Elegant Wedding Host", "category": "Wedding", "description": "Bringing joy and laughter to a beautiful wedding ceremony." },
-  { "type": "image", "src": "/events/wedding/1.jpg", "title": "Sacred Vows", "category": "Wedding", "description": "A heartfelt moment as the couple exchanges vows surrounded by loved ones." },
-  { "type": "image", "src": "/events/wedding/2.jpg", "title": "Joyful Union", "category": "Wedding", "description": "Celebrating the union of two souls in a vibrant and festive setting." },
-  { "type": "image", "src": "/events/wedding/3.jpg", "title": "Family Blessings", "category": "Wedding", "description": "Families come together to bless the newlyweds with love and happiness." },
-  { "type": "image", "src": "/events/wedding/4.jpg", "title": "Traditional Rituals", "category": "Wedding", "description": "Capturing the beauty of timeless wedding traditions and rituals." },
-  { "type": "image", "src": "/events/wedding/5.jpg", "title": "Festive Gatherings", "category": "Wedding", "description": "Friends and family gather to celebrate a day filled with joy and music." },
-
-  { "type": "image", "src": "/events/random/1.png", "title": "Candid Laughter", "category": "Random", "description": "A spontaneous moment of joy captured in the midst of celebration." },
-  { "type": "image", "src": "/events/random/2.png", "title": "Behind the Scenes", "category": "Random", "description": "A glimpse into the preparations that make every event special." },
-  { "type": "image", "src": "/events/random/10.png", "title": "Unexpected Fun", "category": "Random", "description": "Surprising moments that bring smiles to everyone involved." },
-  { "type": "image", "src": "/events/random/11.png", "title": "Colorful Vibes", "category": "Random", "description": "Vivid colors and lively energy light up the scene." },
-  { "type": "image", "src": "/events/random/12.png", "title": "Friendly Faces", "category": "Random", "description": "Friends gather to share stories and laughter." },
-  { "type": "image", "src": "/events/random/13.png", "title": "Moments in Motion", "category": "Random", "description": "Capturing the dynamic spirit of the event." },
-  { "type": "image", "src": "/events/random/14.png", "title": "Shared Happiness", "category": "Random", "description": "Happiness multiplies when shared with others." },
-  { "type": "image", "src": "/events/random/15.png", "title": "Festive Cheers", "category": "Random", "description": "Celebrating together with cheers and applause." },
-  { "type": "image", "src": "/events/random/16.png", "title": "Unforgettable Night", "category": "Random", "description": "A night to remember, filled with laughter and fun." },
-  { "type": "image", "src": "/events/random/17.png", "title": "Spontaneous Smiles", "category": "Random", "description": "Catching genuine smiles in the moment." },
-  { "type": "image", "src": "/events/random/18.png", "title": "Lively Crowd", "category": "Random", "description": "A lively crowd brings energy and excitement to the event." },
-  { "type": "image", "src": "/events/random/19.png", "title": "Fun in Focus", "category": "Random", "description": "Capturing the essence of fun and friendship." },
-  { "type": "image", "src": "/events/random/20.png", "title": "Celebration Time", "category": "Random", "description": "Every moment is worth celebrating with friends." },
-  { "type": "image", "src": "/events/random/21.png", "title": "Bright Gatherings", "category": "Random", "description": "A gathering full of bright smiles and good vibes." },
-  { "type": "image", "src": "/events/random/22.png", "title": "Joyful Reflections", "category": "Random", "description": "Reflecting on joyful times with everyone present." }
+  {
+    "type": "image",
+    "src": "/events/concert/1.JPG",
+    "title": "Opening Act Energy",
+    "category": "Concert",
+    "description": "The crowd comes alive as the first notes fill the air, setting the stage for an unforgettable night."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1751212376705.jpg",
+    "title": "Spotlight Performance",
+    "category": "Concert",
+    "description": "A magical moment under the spotlight, capturing the passion and excitement of live music."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1751212378247.jpg",
+    "title": "Rhythm and Lights",
+    "category": "Concert",
+    "description": "Vibrant lights and rhythmic beats create an electrifying atmosphere for all attendees."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1751214209512.jpg",
+    "title": "Encore Applause",
+    "category": "Concert",
+    "description": "The audience erupts in applause, demanding one more song from their favorite artist."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/2.JPG",
+    "title": "Melodic Moments",
+    "category": "Concert",
+    "description": "A soulful performance that resonates with every music lover in the venue."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/3.JPG",
+    "title": "Crowd Connection",
+    "category": "Concert",
+    "description": "The artist connects with the audience, making every person feel part of the show."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/4.JPEG",
+    "title": "Guitar Solo",
+    "category": "Concert",
+    "description": "A breathtaking guitar solo that leaves the crowd in awe."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/5.JPEG",
+    "title": "Stage Presence",
+    "category": "Concert",
+    "description": "Commanding the stage with charisma and talent, the performer shines bright."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/6.JPEG",
+    "title": "Dancing Lights",
+    "category": "Concert",
+    "description": "Colorful lights dance across the stage, adding magic to the musical experience."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/7.PNG",
+    "title": "Final Bow",
+    "category": "Concert",
+    "description": "The artist takes a bow, closing the night with gratitude and joy."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1.jpg",
+    "title": "Welcoming Address",
+    "category": "Corporate",
+    "description": "Kicking off the event with a warm welcome and inspiring words."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/2.jpg",
+    "title": "Networking Moments",
+    "category": "Corporate",
+    "description": "Professionals connect and share ideas during a lively networking session."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/3.jpg",
+    "title": "Keynote Insights",
+    "category": "Corporate",
+    "description": "A keynote speaker delivers valuable insights to an engaged audience."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/4.jpg",
+    "title": "Team Collaboration",
+    "category": "Corporate",
+    "description": "Colleagues collaborate and brainstorm, driving innovation forward."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/5.jpg",
+    "title": "Award Ceremony",
+    "category": "Corporate",
+    "description": "Celebrating achievements and recognizing outstanding contributions."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/6.jpg",
+    "title": "Panel Discussion",
+    "category": "Corporate",
+    "description": "Industry leaders share their perspectives in an engaging panel discussion."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/7.jpg",
+    "title": "Product Launch",
+    "category": "Corporate",
+    "description": "Unveiling the latest innovations to an excited audience."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/8.jpg",
+    "title": "Interactive Workshop",
+    "category": "Corporate",
+    "description": "Hands-on workshops foster learning and skill development."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/9.jpg",
+    "title": "Closing Remarks",
+    "category": "Corporate",
+    "description": "Wrapping up the event with thoughtful reflections and future plans."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/10.jpg",
+    "title": "Business Connections",
+    "category": "Corporate",
+    "description": "Building lasting business relationships in a professional setting."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/11.jpg",
+    "title": "Corporate Gala",
+    "category": "Corporate",
+    "description": "An elegant evening celebrating corporate milestones and successes."
+  },
+  {
+    "type": "image",
+    "src": "/events/crowd/1.JPEG",
+    "title": "Excited Audience",
+    "category": "Crowd",
+    "description": "A sea of enthusiastic faces, ready for an amazing event."
+  },
+  {
+    "type": "image",
+    "src": "/events/crowd/2.JPEG",
+    "title": "Cheering Fans",
+    "category": "Crowd",
+    "description": "Fans cheer and celebrate, creating an electric atmosphere."
+  },
+  {
+    "type": "image",
+    "src": "/events/crowd/3.JPEG",
+    "title": "Unified Spirits",
+    "category": "Crowd",
+    "description": "The crowd moves as one, united by the energy of the moment."
+  },
+  {
+    "type": "image",
+    "src": "/events/crowd/4.JPEG",
+    "title": "Joyful Gathering",
+    "category": "Crowd",
+    "description": "Smiles and laughter fill the venue as people come together."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/1751212519103.jpg",
+    "title": "Elegant Wedding Host",
+    "category": "Wedding",
+    "description": "Bringing joy and laughter to a beautiful wedding ceremony."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/1.jpg",
+    "title": "Sacred Vows",
+    "category": "Wedding",
+    "description": "A heartfelt moment as the couple exchanges vows surrounded by loved ones."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/2.jpg",
+    "title": "Joyful Union",
+    "category": "Wedding",
+    "description": "Celebrating the union of two souls in a vibrant and festive setting."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/3.jpg",
+    "title": "Family Blessings",
+    "category": "Wedding",
+    "description": "Families come together to bless the newlyweds with love and happiness."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/4.jpg",
+    "title": "Traditional Rituals",
+    "category": "Wedding",
+    "description": "Capturing the beauty of timeless wedding traditions and rituals."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/5.jpg",
+    "title": "Festive Gatherings",
+    "category": "Wedding",
+    "description": "Friends and family gather to celebrate a day filled with joy and music."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/6.jpg",
+    "title": "Sacred Vows",
+    "category": "Wedding",
+    "description": "A heartfelt moment as the couple exchanges vows surrounded by loved ones."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/7.jpg",
+    "title": "Joyful Union",
+    "category": "Wedding",
+    "description": "Celebrating the union of two souls in a vibrant and festive setting."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/8.jpg",
+    "title": "Family Blessings",
+    "category": "Wedding",
+    "description": "Families come together to bless the newlyweds with love and happiness."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/9.jpg",
+    "title": "Traditional Rituals",
+    "category": "Wedding",
+    "description": "Capturing the beauty of timeless wedding traditions and rituals."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/10.jpg",
+    "title": "Festive Gatherings",
+    "category": "Wedding",
+    "description": "Friends and family gather to celebrate a day filled with joy and music."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/11.jpg",
+    "title": "Joyful Union",
+    "category": "Wedding",
+    "description": "Celebrating the union of two souls in a vibrant and festive setting."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/12.jpg",
+    "title": "Family Blessings",
+    "category": "Wedding",
+    "description": "Families come together to bless the newlyweds with love and happiness."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/13.jpg",
+    "title": "Traditional Rituals",
+    "category": "Wedding",
+    "description": "Capturing the beauty of timeless wedding traditions and rituals."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/14.jpg",
+    "title": "Festive Gatherings",
+    "category": "Wedding",
+    "description": "Friends and family gather to celebrate a day filled with joy and music."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/1.png",
+    "title": "Candid Laughter",
+    "category": "Random",
+    "description": "A spontaneous moment of joy captured in the midst of celebration."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/2.png",
+    "title": "Behind the Scenes",
+    "category": "Random",
+    "description": "A glimpse into the preparations that make every event special."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/10.png",
+    "title": "Unexpected Fun",
+    "category": "Random",
+    "description": "Surprising moments that bring smiles to everyone involved."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/11.png",
+    "title": "Colorful Vibes",
+    "category": "Random",
+    "description": "Vivid colors and lively energy light up the scene."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/12.png",
+    "title": "Friendly Faces",
+    "category": "Random",
+    "description": "Friends gather to share stories and laughter."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/13.png",
+    "title": "Moments in Motion",
+    "category": "Random",
+    "description": "Capturing the dynamic spirit of the event."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/14.png",
+    "title": "Shared Happiness",
+    "category": "Random",
+    "description": "Happiness multiplies when shared with others."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/15.png",
+    "title": "Festive Cheers",
+    "category": "Random",
+    "description": "Celebrating together with cheers and applause."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/16.png",
+    "title": "Unforgettable Night",
+    "category": "Random",
+    "description": "A night to remember, filled with laughter and fun."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/17.png",
+    "title": "Spontaneous Smiles",
+    "category": "Random",
+    "description": "Catching genuine smiles in the moment."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/19.png",
+    "title": "Fun in Focus",
+    "category": "Random",
+    "description": "Capturing the essence of fun and friendship."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/20.png",
+    "title": "Celebration Time",
+    "category": "Random",
+    "description": "Every moment is worth celebrating with friends."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/21.png",
+    "title": "Bright Gatherings",
+    "category": "Random",
+    "description": "A gathering full of bright smiles and good vibes."
+  },
+  {
+    "type": "image",
+    "src": "/events/random/22.png",
+    "title": "Joyful Reflections",
+    "category": "Random",
+    "description": "Reflecting on joyful times with everyone present."
+  }
 ]
