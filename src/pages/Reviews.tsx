@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import reviewsData from '../data/reviews.json';
 
 interface Review {
   title: string;
@@ -11,8 +10,14 @@ interface Review {
 }
 
 const ReviewsPage = () => {
-  const [reviews, setReviews] = useState(reviewsData as Review[]);
+  const [reviews, setReviews] = useState<Review[]>([]);
   const [form, setForm] = useState({ title: '', text: '', rating: 5, author: '' });
+
+  useEffect(() => {
+    fetch('/api/reviews')
+      .then(res => res.json())
+      .then(data => setReviews(data));
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,13 +30,25 @@ const ReviewsPage = () => {
     setForm({ title: '', text: '', rating: 5, author: '' });
   };
 
+  const handleDelete = async (displayIndex: number) => {
+    const originalIndex = reviews.length - 1 - displayIndex;
+    await fetch(`/api/review?index=${originalIndex}`, { method: 'DELETE' });
+    setReviews(reviews.filter((_, idx) => idx !== originalIndex));
+  };
+
   return (
     <div className="min-h-screen bg-black">
       <Navigation />
       <div className="pt-24 container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {reviews.map((rev, idx) => (
-            <div key={idx} className="glassmorphism p-6 rounded-xl text-white">
+          {[...reviews].reverse().map((rev, idx) => (
+            <div key={idx} className="glassmorphism p-6 rounded-xl text-white relative">
+              <button
+                className="absolute top-2 right-2 text-gray-400 hover:text-red-500"
+                onClick={() => handleDelete(idx)}
+              >
+                ×
+              </button>
               <h3 className="font-semibold mb-2">{rev.title}</h3>
               <p className="mb-2">{rev.text}</p>
               <p className="mb-2">- {rev.author}</p>

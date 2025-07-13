@@ -9,7 +9,8 @@ interface Review {
   author: string;
 }
 
-const reviews = reviewsData as Review[];
+// newest reviews first
+const reviews = (reviewsData as Review[]).slice().reverse();
 
 const ReviewsSection = () => {
   const display = reviews.slice(0, 3);

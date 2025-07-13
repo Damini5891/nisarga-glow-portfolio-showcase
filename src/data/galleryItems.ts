@@ -33,5 +33,6 @@ const autoGallery: GalleryItem[] = Object.entries(imageModules).map(([path, url]
 
 import customGallery from './customGallery.json';
 
-export const galleryItems = customGallery;
+// show newest uploaded items first
+export const galleryItems = customGallery.slice().reverse();
 export const categories = ['All', ...Array.from(new Set(customGallery.map((item) => item.category)))];
