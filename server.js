@@ -45,11 +45,49 @@ const server = http.createServer((req, res) => {
     res.writeHead(204, {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': 'Content-Type',
-      'Access-Control-Allow-Methods': 'POST,OPTIONS',
+      'Access-Control-Allow-Methods': 'POST,GET,DELETE,OPTIONS',
     });
     return res.end();
   }
-  if (req.method === 'POST' && req.url === '/api/review') {
+  if (req.method === 'GET' && req.url === '/api/gallery') {
+    const items = fs.existsSync(galleryFile)
+      ? JSON.parse(fs.readFileSync(galleryFile, 'utf8'))
+      : [];
+    sendJson(res, 200, items);
+  } else if (req.method === 'GET' && req.url === '/api/reviews') {
+    const reviews = fs.existsSync(reviewsFile)
+      ? JSON.parse(fs.readFileSync(reviewsFile, 'utf8'))
+      : [];
+    sendJson(res, 200, reviews);
+  } else if (req.method === 'DELETE' && req.url.startsWith('/api/gallery')) {
+    const url = new URL(req.url, 'http://localhost');
+    const src = url.searchParams.get('src');
+    if (!src) return sendJson(res, 400, { error: 'Missing src' });
+    let items = [];
+    if (fs.existsSync(galleryFile)) {
+      items = JSON.parse(fs.readFileSync(galleryFile, 'utf8'));
+    }
+    items = items.filter(item => item.src !== src);
+    fs.writeFileSync(galleryFile, JSON.stringify(items, null, 2));
+    const filePath = path.join(__dirname, 'public', src);
+    if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
+    sendJson(res, 200, { success: true });
+  } else if (req.method === 'DELETE' && req.url.startsWith('/api/review')) {
+    const url = new URL(req.url, 'http://localhost');
+    const index = Number(url.searchParams.get('index'));
+    if (Number.isNaN(index)) return sendJson(res, 400, { error: 'Invalid index' });
+    let reviews = [];
+    if (fs.existsSync(reviewsFile)) {
+      reviews = JSON.parse(fs.readFileSync(reviewsFile, 'utf8'));
+    }
+    if (index >= 0 && index < reviews.length) {
+      reviews.splice(index, 1);
+      fs.writeFileSync(reviewsFile, JSON.stringify(reviews, null, 2));
+      sendJson(res, 200, { success: true });
+    } else {
+      sendJson(res, 400, { error: 'Invalid index' });
+    }
+  } else if (req.method === 'POST' && req.url === '/api/review') {
     let body = '';
     let received = 0;
     req.on('data', chunk => {

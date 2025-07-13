@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -7,6 +7,15 @@ const UploadPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [form, setForm] = useState({ eventType: 'concert', title: '', description: '', image: null as File | null });
+  const [items, setItems] = useState<any[]>([]);
+
+  useEffect(() => {
+    if (loggedIn) {
+      fetch('/api/gallery')
+        .then(res => res.json())
+        .then(data => setItems(data));
+    }
+  }, [loggedIn]);
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (username === 'admin' && password === 'nisarga123') {
@@ -16,7 +25,7 @@ const UploadPage = () => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.image) return;
 
@@ -43,6 +52,11 @@ const UploadPage = () => {
     reader.readAsDataURL(form.image);
   };
 
+  const handleDelete = async (src: string) => {
+    await fetch(`/api/gallery?src=${encodeURIComponent(src)}`, { method: 'DELETE' });
+    setItems(items.filter(item => item.src !== src));
+  };
+
   return (
     <div className="min-h-screen bg-black">
       <Navigation />
@@ -55,7 +69,7 @@ const UploadPage = () => {
             <button className="px-4 py-2 bg-coral-pink text-white rounded" type="submit">Login</button>
           </form>
         ) : (
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto glassmorphism p-6 rounded-xl">
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto glassmorphism p-6 rounded-xl mb-12">
             <h2 className="text-white mb-4 text-xl">Upload Image</h2>
             <select className="w-full mb-2 p-2" value={form.eventType} onChange={e => setForm({ ...form, eventType: e.target.value })}>
               <option value="concert">concert</option>
@@ -69,6 +83,21 @@ const UploadPage = () => {
             <input type="file" onChange={e => setForm({ ...form, image: e.target.files ? e.target.files[0] : null })} className="w-full mb-4" />
             <button className="px-4 py-2 bg-coral-pink text-white rounded" type="submit">Upload</button>
           </form>
+        )}
+        {loggedIn && (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[...items].reverse().map(item => (
+              <div key={item.src} className="relative">
+                <button
+                  className="absolute top-1 right-1 bg-black/50 text-white rounded-full w-6 h-6 flex items-center justify-center"
+                  onClick={() => handleDelete(item.src)}
+                >
+                  ×
+                </button>
+                <img src={item.src} className="w-full h-32 object-cover rounded" />
+              </div>
+            ))}
+          </div>
         )}
       </div>
       <Footer />
