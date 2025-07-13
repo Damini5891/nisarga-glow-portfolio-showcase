@@ -152,7 +152,8 @@ const UploadPage = () => {
         ) : (
           <>
             <div className="flex justify-between items-center mb-6">
-              <button
+              <a
+                href="/"
                 className="text-white underline hover:text-coral-pink"
                 onClick={() => {
                   setLoggedIn(false);
@@ -161,7 +162,7 @@ const UploadPage = () => {
                 }}
               >
                 Logout
-              </button>
+              </a>
               <div className="flex space-x-4">
                 {(["images", "events", "reviews"] as const).map((tab) => (
                   <button
