@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
 
 const UploadPage = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -107,9 +105,8 @@ const handleImageSubmit = async (e: React.FormEvent) => {
   };
 
   return (
-    <div className="min-h-screen bg-black">
-      <Navigation />
-      <div className="pt-24 container mx-auto px-6">
+    <div className="min-h-screen bg-black pt-10">
+      <div className="container mx-auto px-6">
         {!loggedIn ? (
           <form onSubmit={handleLogin} className="max-w-md mx-auto glassmorphism p-6 rounded-xl">
             <h2 className="text-white mb-4 text-xl">Admin Login</h2>
@@ -215,23 +212,7 @@ const handleImageSubmit = async (e: React.FormEvent) => {
             )}
           </>
         )}
-        {loggedIn && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[...items].reverse().map(item => (
-              <div key={item.src} className="relative">
-                <button
-                  className="absolute top-1 right-1 bg-black/50 text-white rounded-full w-6 h-6 flex items-center justify-center"
-                  onClick={() => handleDelete(item.src)}
-                >
-                  ×
-                </button>
-                <img src={item.src} className="w-full h-32 object-cover rounded" />
-              </div>
-            ))}
-          </div>
-        )}
       </div>
-      <Footer />
     </div>
   );
 };
