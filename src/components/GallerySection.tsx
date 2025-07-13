@@ -1,15 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Camera, Play, ExternalLink } from 'lucide-react';
-import { galleryItems, categories } from '../data/galleryItems';
+
+interface GalleryItem {
+  type: 'image' | 'video';
+  src?: string;
+  title: string;
+  category: string;
+  description: string;
+}
 
 const GallerySection = () => {
   const [activeFilter, setActiveFilter] = useState('All');
+  const [items, setItems] = useState<GalleryItem[]>([]);
 
+  useEffect(() => {
+    fetch('/api/gallery')
+      .then(res => res.json())
+      .then(data => setItems(data.slice().reverse()));
+  }, []);
 
+  const categories = ['All', ...Array.from(new Set(items.map(i => i.category)))];
 
-  const filteredItems = activeFilter === 'All'
-    ? galleryItems
-    : galleryItems.filter(item => item.category === activeFilter);
+  const filteredItems =
+    activeFilter === 'All'
+      ? items
+      : items.filter(item => item.category === activeFilter);
 
   const displayItems = filteredItems.slice(0, 8);
 

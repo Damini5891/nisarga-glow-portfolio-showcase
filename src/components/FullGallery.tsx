@@ -1,14 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Camera, Play, ExternalLink, ArrowLeft } from 'lucide-react';
-import { galleryItems, categories } from '../data/galleryItems';
+
+interface GalleryItem {
+  type: 'image' | 'video';
+  src?: string;
+  title: string;
+  category: string;
+  description: string;
+}
 
 const FullGallery = () => {
   const [activeFilter, setActiveFilter] = useState('All');
+  const [items, setItems] = useState<GalleryItem[]>([]);
+
+  useEffect(() => {
+    fetch('/api/gallery')
+      .then(res => res.json())
+      .then(data => setItems(data.slice().reverse()));
+  }, []);
+
+  const categories = ['All', ...Array.from(new Set(items.map(i => i.category)))];
 
   const filteredItems =
     activeFilter === 'All'
-      ? galleryItems
-      : galleryItems.filter((item) => item.category === activeFilter);
+      ? items
+      : items.filter((item) => item.category === activeFilter);
 
   return (
     <section className="py-20 bg-gradient-to-b from-black to-royal-violet-dark relative overflow-hidden">

@@ -21,7 +21,7 @@ const Navigation = () => {
     { label: 'Services', href: '#services' },
     { label: 'Gallery', href: '#gallery' },
     { label: 'Events', href: '/events' },
-    { label: 'Reviews', href: '/reviews' },
+    { label: 'Reviews', href: '/all-reviews' },
     { label: 'Contact', href: '#contact' }
   ];
 
@@ -46,10 +46,10 @@ const Navigation = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/events"
             className="bg-gradient-to-r from-royal-violet to-coral-pink text-white px-6 py-2 rounded-full hover:scale-105 transition-transform duration-300 font-medium"
           >
-            Book Now
+            Upcoming Events
           </a>
         </div>
 
@@ -76,11 +76,11 @@ const Navigation = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/events"
             className="block bg-gradient-to-r from-royal-violet to-coral-pink text-white px-6 py-2 rounded-full text-center mt-4 font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Book Now
+            Upcoming Events
           </a>
         </div>
       )}

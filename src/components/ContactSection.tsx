@@ -88,6 +88,7 @@ const ContactSection = () => {
           </div>
 
           <div className="glassmorphism p-8 rounded-2xl flex flex-col items-center justify-center text-center">
+            <img src="/placeholder.svg" alt="Contact" className="w-32 h-32 mb-6" />
             <a
               href="mailto:nisarga@example.com"
               className="bg-gradient-to-r from-coral-pink to-royal-violet text-white px-8 py-4 rounded-lg font-semibold flex items-center space-x-2 hover:scale-105 transition-transform duration-300"

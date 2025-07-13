@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Star } from 'lucide-react';
-import reviewsData from '../data/reviews.json';
 
 interface Review {
   title: string;
@@ -9,10 +8,15 @@ interface Review {
   author: string;
 }
 
-// newest reviews first
-const reviews = (reviewsData as Review[]).slice().reverse();
-
 const ReviewsSection = () => {
+  const [reviews, setReviews] = useState<Review[]>([]);
+
+  useEffect(() => {
+    fetch('/api/reviews')
+      .then(res => res.json())
+      .then(data => setReviews(data.reverse()));
+  }, []);
+
   const display = reviews.slice(0, 3);
   return (
     <section id="reviews" className="py-20 bg-gradient-to-b from-black to-royal-violet-dark">
@@ -37,6 +41,14 @@ const ReviewsSection = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-8">
+          <a
+            href="/all-reviews"
+            className="px-6 py-3 rounded-full border transition-all duration-500 transform-gpu hover:scale-105 border-coral-pink text-coral-pink hover:bg-coral-pink hover:text-white glassmorphism"
+          >
+            See All Reviews
+          </a>
         </div>
       </div>
     </section>
