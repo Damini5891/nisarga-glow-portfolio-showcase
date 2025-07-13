@@ -16,7 +16,7 @@ const EventsPage = () => {
   useEffect(() => {
     fetch('/api/events')
       .then(res => res.json())
-      .then(data => setEvents(data));
+      .then(data => setEvents(data.slice().reverse()));
   }, []);
 
   return (

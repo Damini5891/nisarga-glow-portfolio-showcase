@@ -94,9 +94,10 @@ const handleImageSubmit = async (e: React.FormEvent) => {
     reader.readAsDataURL(eventForm.image);
   };
 
-  const handleEventDelete = async (index: number) => {
-    await fetch(`/api/event?index=${index}`, { method: 'DELETE' });
-    setEvents(events.filter((_, i) => i !== index));
+  const handleEventDelete = async (displayIndex: number) => {
+    const originalIndex = events.length - 1 - displayIndex;
+    await fetch(`/api/event?index=${originalIndex}`, { method: 'DELETE' });
+    setEvents(events.filter((_, i) => i !== originalIndex));
   };
 
   const handleReviewDelete = async (displayIndex: number) => {
@@ -173,7 +174,7 @@ const handleImageSubmit = async (e: React.FormEvent) => {
                   <button className="px-4 py-2 bg-coral-pink text-white rounded" type="submit">Upload</button>
                 </form>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {events.map((ev, idx) => (
+                  {[...events].reverse().map((ev, idx) => (
                     <div key={idx} className="glassmorphism p-4 rounded-xl relative text-white">
                       <button
                         className="absolute top-1 right-1 bg-black/50 text-white rounded-full w-6 h-6 flex items-center justify-center"
