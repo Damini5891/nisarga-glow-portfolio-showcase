@@ -183,55 +183,6 @@
   },
   {
     "type": "image",
-    "src": "/events/wedding/1.jpg",
-    "title": "Sacred Vows",
-    "category": "Wedding",
-    "description": "A heartfelt moment as the couple exchanges vows surrounded by loved ones."
-  },
-  {
-    "type": "image",
-    "src": "/events/wedding/2.jpg",
-    "title": "Joyful Union",
-    "category": "Wedding",
-    "description": "Celebrating the union of two souls in a vibrant and festive setting."
-  },
-  {
-    "type": "image",
-    "src": "/events/wedding/3.jpg",
-    "title": "Family Blessings",
-    "category": "Wedding",
-    "description": "Families come together to bless the newlyweds with love and happiness."
-  },
-  {
-    "type": "image",
-    "src": "/events/wedding/4.jpg",
-    "title": "Traditional Rituals",
-    "category": "Wedding",
-    "description": "Capturing the beauty of timeless wedding traditions and rituals."
-  },
-  {
-    "type": "image",
-    "src": "/events/wedding/5.jpg",
-    "title": "Festive Gatherings",
-    "category": "Wedding",
-    "description": "Friends and family gather to celebrate a day filled with joy and music."
-  },
-  {
-    "type": "image",
-    "src": "/events/wedding/6.jpg",
-    "title": "Sacred Vows",
-    "category": "Wedding",
-    "description": "A heartfelt moment as the couple exchanges vows surrounded by loved ones."
-  },
-  {
-    "type": "image",
-    "src": "/events/wedding/7.jpg",
-    "title": "Joyful Union",
-    "category": "Wedding",
-    "description": "Celebrating the union of two souls in a vibrant and festive setting."
-  },
-  {
-    "type": "image",
     "src": "/events/wedding/8.jpg",
     "title": "Family Blessings",
     "category": "Wedding",
@@ -243,13 +194,6 @@
     "title": "Traditional Rituals",
     "category": "Wedding",
     "description": "Capturing the beauty of timeless wedding traditions and rituals."
-  },
-  {
-    "type": "image",
-    "src": "/events/wedding/10.jpg",
-    "title": "Festive Gatherings",
-    "category": "Wedding",
-    "description": "Friends and family gather to celebrate a day filled with joy and music."
   },
   {
     "type": "image",

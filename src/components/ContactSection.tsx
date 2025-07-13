@@ -32,7 +32,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="text-gray-400 text-sm">Email</div>
-                    <div className="text-white font-medium">nisarga@example.com</div>
+                    <div className="text-white font-medium">nisarga065@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -90,7 +90,7 @@ const ContactSection = () => {
           <div className="glassmorphism p-8 rounded-2xl flex flex-col items-center justify-center text-center">
             <img src="/contact.svg" alt="Contact" className="w-96 h-96 mb-6" />
             <a
-              href="mailto:nisarga@example.com"
+              href="mailto:nisarga065@gmail.com"
               className="bg-gradient-to-r from-coral-pink to-royal-violet text-white px-8 py-4 rounded-lg font-semibold flex items-center space-x-2 hover:scale-105 transition-transform duration-300"
             >
               <Mail size={20} />
