@@ -20,11 +20,11 @@ function sendJson(res, status, data) {
 }
 
 function serveStatic(req, res) {
-  const filePath = path.join(
-    __dirname,
-    'dist',
-    req.url === '/' ? 'index.html' : req.url
-  );
+  let filePath = path.join(__dirname, 'dist', req.url.split('?')[0]);
+  if (req.url === '/' || !fs.existsSync(filePath)) {
+    filePath = path.join(__dirname, 'dist', 'index.html');
+  }
+
   fs.readFile(filePath, (err, content) => {
     if (err) {
       res.writeHead(404, { 'Content-Type': 'text/plain' });
