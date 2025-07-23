@@ -1,76 +1,6 @@
 [
   {
     "type": "image",
-    "src": "/events/concert/1.JPG",
-    "title": "Opening Act Energy",
-    "category": "Concert",
-    "description": "The crowd comes alive as the first notes fill the air, setting the stage for an unforgettable night."
-  },
-  {
-    "type": "image",
-    "src": "/events/concert/1751212376705.jpg",
-    "title": "Spotlight Performance",
-    "category": "Concert",
-    "description": "A magical moment under the spotlight, capturing the passion and excitement of live music."
-  },
-  {
-    "type": "image",
-    "src": "/events/concert/1751212378247.jpg",
-    "title": "Rhythm and Lights",
-    "category": "Concert",
-    "description": "Vibrant lights and rhythmic beats create an electrifying atmosphere for all attendees."
-  },
-  {
-    "type": "image",
-    "src": "/events/concert/1751214209512.jpg",
-    "title": "Encore Applause",
-    "category": "Concert",
-    "description": "The audience erupts in applause, demanding one more song from their favorite artist."
-  },
-  {
-    "type": "image",
-    "src": "/events/concert/2.JPG",
-    "title": "Melodic Moments",
-    "category": "Concert",
-    "description": "A soulful performance that resonates with every music lover in the venue."
-  },
-  {
-    "type": "image",
-    "src": "/events/concert/3.JPG",
-    "title": "Crowd Connection",
-    "category": "Concert",
-    "description": "The artist connects with the audience, making every person feel part of the show."
-  },
-  {
-    "type": "image",
-    "src": "/events/concert/4.JPEG",
-    "title": "Guitar Solo",
-    "category": "Concert",
-    "description": "A breathtaking guitar solo that leaves the crowd in awe."
-  },
-  {
-    "type": "image",
-    "src": "/events/concert/5.JPEG",
-    "title": "Stage Presence",
-    "category": "Concert",
-    "description": "Commanding the stage with charisma and talent, the performer shines bright."
-  },
-  {
-    "type": "image",
-    "src": "/events/concert/6.JPEG",
-    "title": "Dancing Lights",
-    "category": "Concert",
-    "description": "Colorful lights dance across the stage, adding magic to the musical experience."
-  },
-  {
-    "type": "image",
-    "src": "/events/concert/7.PNG",
-    "title": "Final Bow",
-    "category": "Concert",
-    "description": "The artist takes a bow, closing the night with gratitude and joy."
-  },
-  {
-    "type": "image",
     "src": "/events/corporate/1.jpg",
     "title": "Welcoming Address",
     "category": "Corporate",
@@ -110,13 +40,6 @@
     "title": "Product Launch",
     "category": "Corporate",
     "description": "Unveiling the latest innovations to an excited audience."
-  },
-  {
-    "type": "image",
-    "src": "/events/corporate/8.jpg",
-    "title": "Interactive Workshop",
-    "category": "Corporate",
-    "description": "Hands-on workshops foster learning and skill development."
   },
   {
     "type": "image",
@@ -390,5 +313,110 @@
     "title": "Power-Packed Presence",
     "category": "Corporate",
     "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260448959.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260449366.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260449657.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260449884.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260449942.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260450073.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260450178.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260450305.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260450529.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260450564.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260450683.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260450918.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260451169.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260451369.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
+  },
+  {
+    "type": "image",
+    "src": "/events/concert/1753260451602.jpg",
+    "title": "Vijaya Prakash concert",
+    "category": "Concert",
+    "description": "An unforgettable evening hosting the legendary Vijaya Prakash — electrifying energy, soulful vibes, and a crowd that danced with every beat."
   }
 ]

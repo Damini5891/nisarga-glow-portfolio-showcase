@@ -11,7 +11,7 @@ const UploadPage = () => {
     eventType: "concert",
     title: "",
     description: "",
-    image: null as File | null,
+    images: [] as File[],
   });
   const [items, setItems] = useState<any[]>([]);
   const [events, setEvents] = useState<any[]>([]);
@@ -22,6 +22,7 @@ const UploadPage = () => {
     image: null as File | null,
   });
   const [reviews, setReviews] = useState<any[]>([]);
+  const [activeFilter, setActiveFilter] = useState('All');
 
   useEffect(() => {
     if (loggedIn) {
@@ -47,31 +48,33 @@ const UploadPage = () => {
 
   const handleImageSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.image) return;
+    if (form.images.length === 0) return;
 
-    if (form.image.size > 25 * 1024 * 1024) {
-      alert("File is larger than 25MB");
-      return;
-    }
+    for (const image of form.images) {
+      if (image.size > 25 * 1024 * 1024) {
+        alert(`File ${image.name} is larger than 25MB`);
+        continue;
+      }
 
-    const reader = new FileReader();
-    reader.onloadend = async () => {
-      const payload = {
-        eventType: form.eventType,
-        title: form.title,
-        description: form.description,
-        image: (reader.result as string).split(",")[1],
+      const reader = new FileReader();
+      reader.onloadend = async () => {
+        const payload = {
+          eventType: form.eventType,
+          title: form.title || image.name.replace(/\.[^/.]+$/, ""),
+          description: form.description,
+          image: (reader.result as string).split(",")[1],
+        };
+        await fetch("/api/upload", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const itemsRes = await fetch("/api/gallery");
+        setItems(await itemsRes.json());
       };
-      await fetch("/api/upload", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const itemsRes = await fetch("/api/gallery");
-      setItems(await itemsRes.json());
-      alert("Uploaded");
-    };
-    reader.readAsDataURL(form.image);
+      reader.readAsDataURL(image);
+    }
+    alert("Uploads complete!");
   };
 
   const handleDelete = async (src: string) => {
@@ -117,6 +120,13 @@ const UploadPage = () => {
     await fetch(`/api/review?index=${originalIndex}`, { method: "DELETE" });
     setReviews(reviews.filter((_, idx) => idx !== originalIndex));
   };
+
+  const categories = ['All', ...Array.from(new Set(items.map(i => i.category)))];
+
+  const filteredItems =
+    activeFilter === 'All'
+      ? items
+      : items.filter((item) => item.category === activeFilter);
 
   return (
     <div className="min-h-screen bg-black pt-10">
@@ -203,7 +213,7 @@ const UploadPage = () => {
                     onChange={(e) =>
                       setForm({ ...form, title: e.target.value })
                     }
-                    placeholder="Title"
+                    placeholder="Title (optional, uses filename if empty)"
                     className="w-full mb-2 p-2 bg-black/40 rounded text-white"
                   />
                   <textarea
@@ -216,10 +226,11 @@ const UploadPage = () => {
                   />
                   <input
                     type="file"
+                    multiple
                     onChange={(e) =>
                       setForm({
                         ...form,
-                        image: e.target.files ? e.target.files[0] : null,
+                        images: e.target.files ? Array.from(e.target.files) : [],
                       })
                     }
                     className="w-full mb-4 text-white"
@@ -231,8 +242,23 @@ const UploadPage = () => {
                     Upload
                   </button>
                 </form>
+                <div className="flex flex-wrap justify-center gap-4 mb-12">
+                  {categories.map((filter) => (
+                    <button
+                      key={filter}
+                      onClick={() => setActiveFilter(filter)}
+                      className={`px-6 py-3 rounded-full border transition-all duration-500 transform-gpu hover:scale-105 ${
+                        activeFilter === filter
+                          ? 'bg-gradient-to-r from-coral-pink to-champagne-gold text-white border-transparent shadow-2xl'
+                          : 'border-coral-pink text-coral-pink hover:bg-coral-pink hover:text-white glassmorphism'
+                      }`}
+                    >
+                      {filter}
+                    </button>
+                  ))}
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                  {[...items].reverse().map((item) => (
+                  {[...filteredItems].reverse().map((item) => (
                     <div key={item.src} className="relative">
                       <button
                         className="absolute top-1 right-1 bg-black/50 text-white rounded-full w-6 h-6 flex items-center justify-center"
