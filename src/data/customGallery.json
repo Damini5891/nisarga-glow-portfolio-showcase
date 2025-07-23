@@ -106,13 +106,6 @@
   },
   {
     "type": "image",
-    "src": "/events/corporate/6.jpg",
-    "title": "Panel Discussion",
-    "category": "Corporate",
-    "description": "Industry leaders share their perspectives in an engaging panel discussion."
-  },
-  {
-    "type": "image",
     "src": "/events/corporate/7.jpg",
     "title": "Product Launch",
     "category": "Corporate",
@@ -138,13 +131,6 @@
     "title": "Business Connections",
     "category": "Corporate",
     "description": "Building lasting business relationships in a professional setting."
-  },
-  {
-    "type": "image",
-    "src": "/events/corporate/11.jpg",
-    "title": "Corporate Gala",
-    "category": "Corporate",
-    "description": "An elegant evening celebrating corporate milestones and successes."
   },
   {
     "type": "image",
@@ -190,13 +176,6 @@
   },
   {
     "type": "image",
-    "src": "/events/wedding/9.jpg",
-    "title": "Traditional Rituals",
-    "category": "Wedding",
-    "description": "Capturing the beauty of timeless wedding traditions and rituals."
-  },
-  {
-    "type": "image",
     "src": "/events/wedding/11.jpg",
     "title": "Joyful Union",
     "category": "Wedding",
@@ -204,24 +183,10 @@
   },
   {
     "type": "image",
-    "src": "/events/wedding/12.jpg",
-    "title": "Family Blessings",
-    "category": "Wedding",
-    "description": "Families come together to bless the newlyweds with love and happiness."
-  },
-  {
-    "type": "image",
     "src": "/events/wedding/13.jpg",
     "title": "Traditional Rituals",
     "category": "Wedding",
     "description": "Capturing the beauty of timeless wedding traditions and rituals."
-  },
-  {
-    "type": "image",
-    "src": "/events/wedding/14.jpg",
-    "title": "Festive Gatherings",
-    "category": "Wedding",
-    "description": "Friends and family gather to celebrate a day filled with joy and music."
   },
   {
     "type": "image",
@@ -320,5 +285,110 @@
     "title": "Joyful Reflections",
     "category": "Random",
     "description": "Reflecting on joyful times with everyone present."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/1753252863221.jpg",
+    "title": "Commanding the Crowd",
+    "category": "Wedding",
+    "description": "Hosting this lively celebration of love with unmatched energy, joy, and pure festive vibes."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/1753252872221.jpg",
+    "title": "Commanding the Crowd",
+    "category": "Wedding",
+    "description": "Hosting this lively celebration of love with unmatched energy, joy, and pure festive vibes."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/1753252882190.jpg",
+    "title": "Commanding the Crowd",
+    "category": "Wedding",
+    "description": "Hosting this lively celebration of love with unmatched energy, joy, and pure festive vibes."
+  },
+  {
+    "type": "image",
+    "src": "/events/wedding/1753252892800.jpg",
+    "title": "Commanding the Crowd",
+    "category": "Wedding",
+    "description": "Hosting this lively celebration of love with unmatched energy, joy, and pure festive vibes."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253337382.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253347510.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253364759.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253391739.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253411438.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253425358.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253445149.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253480019.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253493388.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253524410.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
+  },
+  {
+    "type": "image",
+    "src": "/events/corporate/1753253538095.jpg",
+    "title": "Power-Packed Presence",
+    "category": "Corporate",
+    "description": "Engaging minds, energizing the room, and steering the event with confidence and charisma."
   }
 ]

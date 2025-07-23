@@ -52,7 +52,7 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="glassmorphism p-6 rounded-xl text-center transform-gpu hover:scale-105 hover:-rotate-1 transition-all duration-300">
                 <Users className="text-coral-pink mx-auto mb-3 animate-float" size={32} />
                 <div className="text-champagne-gold font-semibold">Crowd Favorite</div>
@@ -63,7 +63,7 @@ const AboutSection = () => {
                 <div className="text-champagne-gold font-semibold">Crowd Favorite</div>
                 <div className="text-gray-400 text-sm">30K+ Happy Audience</div>
               </div>
-            </div>
+            </div> */}
             
           </div>
 
